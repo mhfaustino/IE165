@@ -10,6 +10,8 @@ app = dash.Dash(
     external_stylesheets=[dbc.themes.FLATLY]
 )
 
+server = app.server
+
 app.layout = html.Div([
     dash.page_container
 ])
