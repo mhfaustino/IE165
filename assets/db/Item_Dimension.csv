@@ -1,0 +1,2161 @@
+ItemKey,Category,SKU,ObsoleteFlag
+1,Grounds,Fertilizer 10kg,0
+2,Motorpool,Automotive Belt A-60,0
+3,Plumbing,PVC Pipe 1/2,0
+4,Office,Printer Ink Black,0
+5,Buildings,Roofing Nails,0
+6,Plumbing,PVC Pipe 1/2,0
+7,Custodial,Trash Bag XL,0
+8,Plumbing,PVC Pipe 1/2,0
+9,Electrical,Ballast 20W,0
+10,Landscaping,Decorative Lights,0
+11,Landscaping,Seed Pack,0
+12,Motorpool,Brake Fluid DOT3,0
+13,Buildings,Cement Bag 40kg,0
+14,Office,Printer Ink Black,0
+15,Plumbing,Pipe Sealant,0
+16,Electrical,Flat Cord #16,0
+17,Motorpool,Diesel Engine Oil SAE 40,0
+18,Plumbing,Water Pump Motor,0
+19,Motorpool,Diesel Engine Oil SAE 40,0
+20,Buildings,"Hollow Blocks 6""",0
+21,Buildings,Roofing Nails,0
+22,Office,Stapler No.35,0
+23,Buildings,Paint White 1L,0
+24,Refrigeration,Copper Tube 3/8,0
+25,Grounds,Grass Cutter Blade,0
+26,Plumbing,PVC Pipe 1/2,0
+27,Motorpool,Diesel Engine Oil SAE 40,0
+28,Motorpool,Automotive Belt A-60,0
+29,Electrical,Flat Cord #16,0
+30,Landscaping,Decorative Lights,0
+31,Office,Printer Ink Black,0
+32,Landscaping,Ornamental Plant Pot,0
+33,Buildings,Cement Bag 40kg,0
+34,Grounds,Shovel,0
+35,Plumbing,Pipe Sealant,0
+36,Grounds,Shovel,0
+37,Plumbing,Water Pump Motor,0
+38,Grounds,Garden Hoe,0
+39,Motorpool,Automotive Belt A-60,0
+40,Plumbing,Water Pump Motor,0
+41,Electrical,Ballast 20W,0
+42,Custodial,Floor Wax 500ml,0
+43,Plumbing,Water Pump Motor,0
+44,Refrigeration,Copper Tube 3/8,0
+45,Custodial,Floor Wax 500ml,0
+46,Buildings,Paint White 1L,0
+47,Refrigeration,Copper Tube 3/8,0
+48,Buildings,"Hollow Blocks 6""",0
+49,Landscaping,Decorative Lights,0
+50,Custodial,Floor Wax 500ml,0
+51,Buildings,Cement Bag 40kg,0
+52,Plumbing,"GI Elbow 1""",0
+53,Refrigeration,Refrigerant R-22,0
+54,Office,Bond Paper A4,0
+55,Custodial,Floor Wax 500ml,0
+56,Landscaping,Seed Pack,0
+57,Plumbing,PVC Pipe 1/2,0
+58,Custodial,Floor Wax 500ml,0
+59,Electrical,Flat Cord #16,0
+60,Grounds,Grass Cutter Blade,0
+61,Buildings,Roofing Nails,0
+62,Grounds,Shovel,0
+63,Grounds,Fertilizer 10kg,0
+64,Grounds,Fertilizer 10kg,0
+65,Office,Whiteboard Marker,0
+66,Landscaping,Garden Soil 5kg,0
+67,Landscaping,Garden Soil 5kg,0
+68,Landscaping,Ornamental Plant Pot,0
+69,Landscaping,Ornamental Plant Pot,0
+70,Buildings,"Hollow Blocks 6""",0
+71,Electrical,"PVC Pipe 1""",0
+72,Buildings,Roofing Nails,0
+73,Landscaping,Decorative Lights,0
+74,Electrical,Ballast 20W,0
+75,Landscaping,Garden Soil 5kg,0
+76,Grounds,Grass Cutter Blade,0
+77,Office,Whiteboard Marker,0
+78,Refrigeration,Refrigerant R-22,0
+79,Grounds,Fertilizer 10kg,0
+80,Custodial,Trash Bag XL,0
+81,Landscaping,Garden Soil 5kg,0
+82,Office,Whiteboard Marker,0
+83,Custodial,Detergent Powder 1kg,0
+84,Landscaping,Garden Soil 5kg,0
+85,Buildings,Paint White 1L,0
+86,Motorpool,Brake Fluid DOT3,1
+87,Plumbing,Water Pump Motor,0
+88,Buildings,"Hollow Blocks 6""",0
+89,Custodial,Floor Wax 500ml,0
+90,Buildings,Paint White 1L,0
+91,Electrical,Flat Cord #16,0
+92,Custodial,Floor Wax 500ml,0
+93,Refrigeration,Copper Tube 3/8,0
+94,Office,Stapler No.35,0
+95,Refrigeration,IC Relay 1/8,0
+96,Landscaping,Ornamental Plant Pot,0
+97,Refrigeration,IC Relay 1/8,0
+98,Custodial,Floor Wax 500ml,0
+99,Electrical,"PVC Pipe 1""",0
+100,Buildings,Cement Bag 40kg,0
+101,Plumbing,PVC Pipe 1/2,0
+102,Electrical,Flat Cord #16,0
+103,Refrigeration,Copper Tube 3/8,0
+104,Custodial,Detergent Powder 1kg,0
+105,Plumbing,Water Pump Motor,0
+106,Buildings,Roofing Nails,0
+107,Grounds,Grass Cutter Blade,1
+108,Grounds,Garden Hoe,0
+109,Plumbing,"GI Elbow 1""",0
+110,Landscaping,Decorative Lights,0
+111,Custodial,Trash Bag XL,0
+112,Plumbing,Water Pump Motor,0
+113,Electrical,Flat Cord #16,0
+114,Grounds,Garden Hoe,0
+115,Motorpool,Brake Fluid DOT3,0
+116,Motorpool,Brake Fluid DOT3,0
+117,Custodial,Floor Wax 500ml,0
+118,Refrigeration,Refrigerant R-22,0
+119,Buildings,"Hollow Blocks 6""",0
+120,Buildings,Paint White 1L,0
+121,Plumbing,Water Pump Motor,0
+122,Custodial,Trash Bag XL,0
+123,Landscaping,Ornamental Plant Pot,0
+124,Buildings,"Hollow Blocks 6""",0
+125,Electrical,Ballast 20W,0
+126,Refrigeration,Refrigerant R-22,0
+127,Electrical,Flat Cord #16,0
+128,Buildings,Cement Bag 40kg,0
+129,Plumbing,"GI Elbow 1""",0
+130,Refrigeration,Filter Drier 1/4,0
+131,Electrical,Flat Cord #16,0
+132,Refrigeration,IC Relay 1/8,0
+133,Office,Whiteboard Marker,0
+134,Plumbing,Water Pump Motor,0
+135,Grounds,Garden Hoe,0
+136,Motorpool,Oil Filter DC518,0
+137,Plumbing,"GI Elbow 1""",0
+138,Custodial,Detergent Powder 1kg,0
+139,Landscaping,Ornamental Plant Pot,0
+140,Landscaping,Seed Pack,0
+141,Refrigeration,Copper Tube 3/8,0
+142,Electrical,"PVC Pipe 1""",0
+143,Refrigeration,Filter Drier 1/4,0
+144,Electrical,Flat Cord #16,0
+145,Custodial,Disinfectant 1L,0
+146,Custodial,Disinfectant 1L,0
+147,Grounds,Grass Cutter Blade,0
+148,Motorpool,Diesel Engine Oil SAE 40,0
+149,Office,Bond Paper A4,0
+150,Grounds,Garden Hoe,0
+151,Motorpool,Oil Filter DC518,0
+152,Electrical,Ballast 20W,0
+153,Landscaping,Ornamental Plant Pot,0
+154,Refrigeration,Refrigerant R-22,0
+155,Plumbing,PVC Pipe 1/2,0
+156,Custodial,Disinfectant 1L,0
+157,Motorpool,Oil Filter DC518,0
+158,Custodial,Detergent Powder 1kg,0
+159,Custodial,Floor Wax 500ml,0
+160,Electrical,Fluorescent Tube 40W,0
+161,Custodial,Disinfectant 1L,0
+162,Motorpool,Oil Filter DC518,0
+163,Landscaping,Garden Soil 5kg,0
+164,Buildings,Cement Bag 40kg,0
+165,Office,Printer Ink Black,0
+166,Office,Whiteboard Marker,1
+167,Refrigeration,Filter Drier 1/4,0
+168,Buildings,Paint White 1L,0
+169,Electrical,Ballast 20W,0
+170,Grounds,Fertilizer 10kg,0
+171,Motorpool,Oil Filter DC518,0
+172,Buildings,Paint White 1L,1
+173,Motorpool,Brake Fluid DOT3,0
+174,Grounds,Shovel,0
+175,Plumbing,Water Pump Motor,1
+176,Refrigeration,Copper Tube 3/8,0
+177,Plumbing,Pipe Sealant,0
+178,Custodial,Disinfectant 1L,0
+179,Motorpool,Automotive Belt A-60,0
+180,Grounds,Grass Cutter Blade,0
+181,Buildings,Roofing Nails,0
+182,Electrical,Ballast 20W,0
+183,Custodial,Detergent Powder 1kg,0
+184,Landscaping,Seed Pack,0
+185,Refrigeration,Filter Drier 1/4,0
+186,Refrigeration,Copper Tube 3/8,0
+187,Plumbing,Pipe Sealant,0
+188,Electrical,Fluorescent Tube 40W,0
+189,Plumbing,Pipe Sealant,0
+190,Electrical,Fluorescent Tube 40W,0
+191,Buildings,"Hollow Blocks 6""",0
+192,Custodial,Floor Wax 500ml,0
+193,Landscaping,Garden Soil 5kg,0
+194,Grounds,Garden Hoe,0
+195,Office,Bond Paper A4,0
+196,Office,Whiteboard Marker,1
+197,Office,Printer Ink Black,0
+198,Electrical,Flat Cord #16,0
+199,Refrigeration,Filter Drier 1/4,0
+200,Plumbing,Water Pump Motor,0
+201,Motorpool,Automotive Belt A-60,0
+202,Plumbing,Pipe Sealant,0
+203,Plumbing,Water Pump Motor,0
+204,Grounds,Garden Hoe,0
+205,Office,Stapler No.35,0
+206,Motorpool,Oil Filter DC518,0
+207,Plumbing,"GI Elbow 1""",0
+208,Plumbing,Pipe Sealant,1
+209,Custodial,Detergent Powder 1kg,0
+210,Buildings,Paint White 1L,0
+211,Custodial,Detergent Powder 1kg,0
+212,Motorpool,Oil Filter DC518,0
+213,Plumbing,"GI Elbow 1""",0
+214,Refrigeration,IC Relay 1/8,0
+215,Buildings,Paint White 1L,0
+216,Refrigeration,IC Relay 1/8,0
+217,Grounds,Garden Hoe,0
+218,Grounds,Fertilizer 10kg,0
+219,Motorpool,Diesel Engine Oil SAE 40,0
+220,Electrical,Ballast 20W,0
+221,Refrigeration,Refrigerant R-22,0
+222,Custodial,Trash Bag XL,0
+223,Plumbing,Water Pump Motor,0
+224,Grounds,Garden Hoe,0
+225,Plumbing,"GI Elbow 1""",0
+226,Buildings,Paint White 1L,0
+227,Refrigeration,IC Relay 1/8,0
+228,Refrigeration,Filter Drier 1/4,0
+229,Custodial,Disinfectant 1L,0
+230,Landscaping,Garden Soil 5kg,0
+231,Plumbing,"GI Elbow 1""",0
+232,Plumbing,"GI Elbow 1""",0
+233,Grounds,Garden Hoe,0
+234,Plumbing,Pipe Sealant,0
+235,Custodial,Floor Wax 500ml,0
+236,Refrigeration,IC Relay 1/8,0
+237,Plumbing,Pipe Sealant,0
+238,Motorpool,Oil Filter DC518,0
+239,Landscaping,Garden Soil 5kg,0
+240,Refrigeration,Refrigerant R-22,0
+241,Electrical,Ballast 20W,0
+242,Refrigeration,Refrigerant R-22,0
+243,Buildings,"Hollow Blocks 6""",0
+244,Buildings,Paint White 1L,0
+245,Grounds,Garden Hoe,0
+246,Plumbing,Water Pump Motor,1
+247,Custodial,Floor Wax 500ml,0
+248,Plumbing,Pipe Sealant,0
+249,Office,Whiteboard Marker,0
+250,Plumbing,"GI Elbow 1""",0
+251,Buildings,Paint White 1L,1
+252,Electrical,Flat Cord #16,0
+253,Office,Whiteboard Marker,0
+254,Grounds,Grass Cutter Blade,0
+255,Plumbing,PVC Pipe 1/2,0
+256,Motorpool,Brake Fluid DOT3,0
+257,Buildings,Cement Bag 40kg,0
+258,Motorpool,Diesel Engine Oil SAE 40,0
+259,Refrigeration,Copper Tube 3/8,0
+260,Motorpool,Diesel Engine Oil SAE 40,0
+261,Electrical,Flat Cord #16,0
+262,Office,Printer Ink Black,0
+263,Refrigeration,Copper Tube 3/8,0
+264,Refrigeration,Refrigerant R-22,0
+265,Buildings,Paint White 1L,0
+266,Refrigeration,Refrigerant R-22,0
+267,Office,Bond Paper A4,0
+268,Refrigeration,Refrigerant R-22,0
+269,Refrigeration,Filter Drier 1/4,0
+270,Landscaping,Decorative Lights,0
+271,Plumbing,Pipe Sealant,0
+272,Electrical,Flat Cord #16,0
+273,Plumbing,"GI Elbow 1""",0
+274,Buildings,Cement Bag 40kg,0
+275,Electrical,Fluorescent Tube 40W,0
+276,Buildings,Paint White 1L,0
+277,Buildings,"Hollow Blocks 6""",0
+278,Refrigeration,Filter Drier 1/4,0
+279,Grounds,Fertilizer 10kg,0
+280,Refrigeration,IC Relay 1/8,0
+281,Electrical,Flat Cord #16,0
+282,Grounds,Shovel,0
+283,Grounds,Shovel,1
+284,Motorpool,Diesel Engine Oil SAE 40,0
+285,Office,Whiteboard Marker,0
+286,Custodial,Detergent Powder 1kg,0
+287,Buildings,Cement Bag 40kg,0
+288,Electrical,"PVC Pipe 1""",0
+289,Motorpool,Oil Filter DC518,0
+290,Landscaping,Ornamental Plant Pot,0
+291,Grounds,Grass Cutter Blade,0
+292,Motorpool,Diesel Engine Oil SAE 40,0
+293,Plumbing,PVC Pipe 1/2,0
+294,Custodial,Trash Bag XL,0
+295,Office,Bond Paper A4,0
+296,Buildings,Paint White 1L,0
+297,Landscaping,Garden Soil 5kg,0
+298,Landscaping,Ornamental Plant Pot,1
+299,Plumbing,Pipe Sealant,0
+300,Grounds,Grass Cutter Blade,0
+301,Grounds,Fertilizer 10kg,0
+302,Office,Bond Paper A4,0
+303,Grounds,Garden Hoe,0
+304,Refrigeration,IC Relay 1/8,0
+305,Electrical,"PVC Pipe 1""",0
+306,Refrigeration,IC Relay 1/8,0
+307,Electrical,Ballast 20W,0
+308,Motorpool,Diesel Engine Oil SAE 40,0
+309,Custodial,Detergent Powder 1kg,0
+310,Custodial,Floor Wax 500ml,0
+311,Landscaping,Decorative Lights,0
+312,Grounds,Shovel,0
+313,Grounds,Fertilizer 10kg,0
+314,Office,Stapler No.35,0
+315,Plumbing,PVC Pipe 1/2,0
+316,Landscaping,Garden Soil 5kg,0
+317,Custodial,Detergent Powder 1kg,0
+318,Office,Bond Paper A4,0
+319,Buildings,Roofing Nails,1
+320,Custodial,Floor Wax 500ml,0
+321,Refrigeration,Copper Tube 3/8,0
+322,Refrigeration,IC Relay 1/8,0
+323,Buildings,Roofing Nails,0
+324,Buildings,Cement Bag 40kg,0
+325,Landscaping,Decorative Lights,0
+326,Custodial,Disinfectant 1L,0
+327,Electrical,"PVC Pipe 1""",0
+328,Landscaping,Decorative Lights,0
+329,Grounds,Fertilizer 10kg,0
+330,Office,Bond Paper A4,0
+331,Buildings,Cement Bag 40kg,0
+332,Plumbing,Pipe Sealant,0
+333,Custodial,Disinfectant 1L,0
+334,Office,Stapler No.35,0
+335,Grounds,Garden Hoe,0
+336,Motorpool,Oil Filter DC518,0
+337,Custodial,Detergent Powder 1kg,0
+338,Custodial,Trash Bag XL,0
+339,Custodial,Trash Bag XL,0
+340,Motorpool,Automotive Belt A-60,0
+341,Motorpool,Brake Fluid DOT3,0
+342,Custodial,Detergent Powder 1kg,0
+343,Refrigeration,Filter Drier 1/4,0
+344,Office,Whiteboard Marker,0
+345,Landscaping,Seed Pack,0
+346,Plumbing,PVC Pipe 1/2,0
+347,Refrigeration,IC Relay 1/8,0
+348,Buildings,Roofing Nails,0
+349,Office,Whiteboard Marker,0
+350,Plumbing,"GI Elbow 1""",0
+351,Custodial,Trash Bag XL,1
+352,Electrical,Ballast 20W,0
+353,Refrigeration,Copper Tube 3/8,0
+354,Plumbing,"GI Elbow 1""",0
+355,Grounds,Shovel,0
+356,Landscaping,Garden Soil 5kg,0
+357,Landscaping,Decorative Lights,0
+358,Motorpool,Oil Filter DC518,0
+359,Electrical,Ballast 20W,0
+360,Grounds,Grass Cutter Blade,0
+361,Electrical,Fluorescent Tube 40W,0
+362,Plumbing,"GI Elbow 1""",0
+363,Motorpool,Oil Filter DC518,0
+364,Refrigeration,Filter Drier 1/4,0
+365,Office,Whiteboard Marker,0
+366,Buildings,Roofing Nails,0
+367,Buildings,Cement Bag 40kg,1
+368,Plumbing,Water Pump Motor,0
+369,Motorpool,Diesel Engine Oil SAE 40,0
+370,Office,Bond Paper A4,0
+371,Landscaping,Seed Pack,0
+372,Electrical,Flat Cord #16,0
+373,Electrical,Ballast 20W,0
+374,Custodial,Disinfectant 1L,0
+375,Refrigeration,IC Relay 1/8,0
+376,Buildings,Roofing Nails,0
+377,Plumbing,"GI Elbow 1""",0
+378,Electrical,Fluorescent Tube 40W,0
+379,Motorpool,Automotive Belt A-60,0
+380,Landscaping,Ornamental Plant Pot,0
+381,Plumbing,"GI Elbow 1""",0
+382,Refrigeration,Refrigerant R-22,0
+383,Plumbing,"GI Elbow 1""",0
+384,Plumbing,Water Pump Motor,0
+385,Custodial,Trash Bag XL,0
+386,Electrical,Flat Cord #16,0
+387,Buildings,Roofing Nails,0
+388,Motorpool,Automotive Belt A-60,0
+389,Plumbing,PVC Pipe 1/2,0
+390,Refrigeration,Refrigerant R-22,0
+391,Electrical,"PVC Pipe 1""",0
+392,Refrigeration,IC Relay 1/8,0
+393,Buildings,"Hollow Blocks 6""",0
+394,Office,Bond Paper A4,0
+395,Buildings,"Hollow Blocks 6""",0
+396,Electrical,"PVC Pipe 1""",0
+397,Buildings,"Hollow Blocks 6""",0
+398,Grounds,Shovel,0
+399,Plumbing,"GI Elbow 1""",0
+400,Office,Printer Ink Black,0
+401,Landscaping,Decorative Lights,0
+402,Grounds,Fertilizer 10kg,0
+403,Grounds,Grass Cutter Blade,0
+404,Buildings,Paint White 1L,0
+405,Office,Printer Ink Black,0
+406,Grounds,Shovel,0
+407,Plumbing,Pipe Sealant,0
+408,Motorpool,Automotive Belt A-60,0
+409,Custodial,Detergent Powder 1kg,0
+410,Buildings,"Hollow Blocks 6""",0
+411,Buildings,Paint White 1L,0
+412,Grounds,Grass Cutter Blade,0
+413,Landscaping,Decorative Lights,0
+414,Buildings,Roofing Nails,0
+415,Plumbing,"GI Elbow 1""",0
+416,Plumbing,Water Pump Motor,0
+417,Buildings,Cement Bag 40kg,0
+418,Plumbing,PVC Pipe 1/2,0
+419,Refrigeration,IC Relay 1/8,0
+420,Electrical,Flat Cord #16,0
+421,Motorpool,Brake Fluid DOT3,0
+422,Office,Stapler No.35,0
+423,Office,Whiteboard Marker,0
+424,Refrigeration,Refrigerant R-22,0
+425,Grounds,Fertilizer 10kg,0
+426,Grounds,Shovel,0
+427,Office,Printer Ink Black,0
+428,Buildings,Roofing Nails,1
+429,Landscaping,Garden Soil 5kg,0
+430,Custodial,Disinfectant 1L,1
+431,Custodial,Floor Wax 500ml,0
+432,Office,Stapler No.35,0
+433,Office,Printer Ink Black,0
+434,Buildings,Cement Bag 40kg,0
+435,Refrigeration,Refrigerant R-22,0
+436,Custodial,Detergent Powder 1kg,0
+437,Electrical,Ballast 20W,0
+438,Office,Bond Paper A4,0
+439,Custodial,Detergent Powder 1kg,0
+440,Grounds,Shovel,0
+441,Electrical,"PVC Pipe 1""",0
+442,Refrigeration,Filter Drier 1/4,0
+443,Refrigeration,IC Relay 1/8,0
+444,Electrical,Flat Cord #16,0
+445,Plumbing,Water Pump Motor,0
+446,Refrigeration,Copper Tube 3/8,0
+447,Landscaping,Ornamental Plant Pot,0
+448,Refrigeration,Filter Drier 1/4,0
+449,Grounds,Shovel,0
+450,Buildings,Roofing Nails,0
+451,Landscaping,Decorative Lights,0
+452,Plumbing,Pipe Sealant,0
+453,Plumbing,"GI Elbow 1""",0
+454,Refrigeration,IC Relay 1/8,0
+455,Motorpool,Automotive Belt A-60,0
+456,Landscaping,Seed Pack,0
+457,Grounds,Fertilizer 10kg,0
+458,Grounds,Garden Hoe,0
+459,Office,Stapler No.35,0
+460,Custodial,Detergent Powder 1kg,0
+461,Electrical,Ballast 20W,0
+462,Grounds,Fertilizer 10kg,0
+463,Electrical,Ballast 20W,0
+464,Electrical,Flat Cord #16,0
+465,Electrical,"PVC Pipe 1""",0
+466,Motorpool,Brake Fluid DOT3,0
+467,Motorpool,Diesel Engine Oil SAE 40,0
+468,Office,Whiteboard Marker,0
+469,Office,Stapler No.35,0
+470,Refrigeration,Filter Drier 1/4,0
+471,Motorpool,Oil Filter DC518,0
+472,Landscaping,Ornamental Plant Pot,0
+473,Landscaping,Decorative Lights,0
+474,Grounds,Shovel,1
+475,Motorpool,Oil Filter DC518,0
+476,Plumbing,PVC Pipe 1/2,0
+477,Custodial,Trash Bag XL,0
+478,Landscaping,Ornamental Plant Pot,0
+479,Buildings,"Hollow Blocks 6""",0
+480,Electrical,Fluorescent Tube 40W,0
+481,Buildings,"Hollow Blocks 6""",1
+482,Grounds,Garden Hoe,0
+483,Buildings,Roofing Nails,0
+484,Plumbing,Pipe Sealant,0
+485,Landscaping,Seed Pack,0
+486,Motorpool,Brake Fluid DOT3,0
+487,Grounds,Grass Cutter Blade,0
+488,Landscaping,Seed Pack,0
+489,Refrigeration,Filter Drier 1/4,0
+490,Refrigeration,Copper Tube 3/8,0
+491,Grounds,Fertilizer 10kg,0
+492,Office,Whiteboard Marker,0
+493,Custodial,Floor Wax 500ml,0
+494,Refrigeration,Filter Drier 1/4,0
+495,Grounds,Fertilizer 10kg,0
+496,Grounds,Fertilizer 10kg,0
+497,Custodial,Disinfectant 1L,0
+498,Landscaping,Garden Soil 5kg,0
+499,Motorpool,Diesel Engine Oil SAE 40,0
+500,Custodial,Trash Bag XL,0
+501,Motorpool,Automotive Belt A-60,1
+502,Plumbing,Pipe Sealant,0
+503,Landscaping,Seed Pack,0
+504,Buildings,Paint White 1L,0
+505,Landscaping,Seed Pack,0
+506,Office,Printer Ink Black,0
+507,Office,Printer Ink Black,1
+508,Plumbing,Water Pump Motor,0
+509,Buildings,Cement Bag 40kg,0
+510,Custodial,Disinfectant 1L,0
+511,Office,Bond Paper A4,1
+512,Motorpool,Oil Filter DC518,0
+513,Refrigeration,Refrigerant R-22,0
+514,Landscaping,Seed Pack,0
+515,Plumbing,Pipe Sealant,0
+516,Office,Stapler No.35,0
+517,Grounds,Shovel,0
+518,Plumbing,PVC Pipe 1/2,0
+519,Electrical,Ballast 20W,0
+520,Plumbing,Water Pump Motor,0
+521,Motorpool,Diesel Engine Oil SAE 40,0
+522,Electrical,Flat Cord #16,0
+523,Motorpool,Brake Fluid DOT3,1
+524,Grounds,Garden Hoe,0
+525,Motorpool,Brake Fluid DOT3,0
+526,Custodial,Detergent Powder 1kg,0
+527,Office,Printer Ink Black,0
+528,Electrical,Fluorescent Tube 40W,0
+529,Plumbing,Water Pump Motor,0
+530,Motorpool,Brake Fluid DOT3,0
+531,Refrigeration,IC Relay 1/8,0
+532,Electrical,"PVC Pipe 1""",1
+533,Electrical,"PVC Pipe 1""",0
+534,Buildings,Roofing Nails,0
+535,Buildings,Paint White 1L,0
+536,Buildings,Paint White 1L,0
+537,Custodial,Floor Wax 500ml,0
+538,Custodial,Disinfectant 1L,0
+539,Electrical,Fluorescent Tube 40W,0
+540,Motorpool,Diesel Engine Oil SAE 40,0
+541,Electrical,"PVC Pipe 1""",0
+542,Office,Bond Paper A4,0
+543,Grounds,Shovel,0
+544,Buildings,Paint White 1L,0
+545,Landscaping,Decorative Lights,0
+546,Refrigeration,Refrigerant R-22,0
+547,Motorpool,Diesel Engine Oil SAE 40,0
+548,Buildings,Cement Bag 40kg,0
+549,Plumbing,Pipe Sealant,0
+550,Electrical,Flat Cord #16,0
+551,Plumbing,Pipe Sealant,0
+552,Grounds,Grass Cutter Blade,0
+553,Office,Printer Ink Black,0
+554,Electrical,Flat Cord #16,0
+555,Refrigeration,IC Relay 1/8,0
+556,Custodial,Trash Bag XL,0
+557,Electrical,Flat Cord #16,0
+558,Electrical,"PVC Pipe 1""",0
+559,Landscaping,Garden Soil 5kg,0
+560,Plumbing,Pipe Sealant,0
+561,Landscaping,Seed Pack,0
+562,Motorpool,Brake Fluid DOT3,0
+563,Refrigeration,IC Relay 1/8,0
+564,Office,Printer Ink Black,0
+565,Motorpool,Brake Fluid DOT3,0
+566,Buildings,Cement Bag 40kg,0
+567,Motorpool,Automotive Belt A-60,1
+568,Grounds,Shovel,0
+569,Buildings,Paint White 1L,0
+570,Electrical,Flat Cord #16,0
+571,Electrical,Fluorescent Tube 40W,0
+572,Landscaping,Garden Soil 5kg,0
+573,Grounds,Garden Hoe,0
+574,Grounds,Shovel,0
+575,Office,Stapler No.35,0
+576,Grounds,Shovel,0
+577,Office,Bond Paper A4,0
+578,Motorpool,Brake Fluid DOT3,0
+579,Office,Bond Paper A4,0
+580,Motorpool,Automotive Belt A-60,0
+581,Plumbing,Water Pump Motor,0
+582,Buildings,Roofing Nails,0
+583,Landscaping,Garden Soil 5kg,0
+584,Buildings,Roofing Nails,0
+585,Landscaping,Decorative Lights,0
+586,Electrical,Ballast 20W,0
+587,Grounds,Shovel,0
+588,Buildings,Cement Bag 40kg,0
+589,Refrigeration,Filter Drier 1/4,0
+590,Motorpool,Diesel Engine Oil SAE 40,0
+591,Electrical,Ballast 20W,0
+592,Refrigeration,Copper Tube 3/8,0
+593,Buildings,"Hollow Blocks 6""",0
+594,Electrical,"PVC Pipe 1""",0
+595,Grounds,Fertilizer 10kg,0
+596,Custodial,Detergent Powder 1kg,0
+597,Office,Stapler No.35,0
+598,Custodial,Disinfectant 1L,0
+599,Electrical,Fluorescent Tube 40W,0
+600,Refrigeration,Filter Drier 1/4,1
+601,Refrigeration,IC Relay 1/8,0
+602,Refrigeration,Copper Tube 3/8,0
+603,Custodial,Disinfectant 1L,0
+604,Office,Stapler No.35,0
+605,Office,Whiteboard Marker,0
+606,Landscaping,Garden Soil 5kg,1
+607,Custodial,Trash Bag XL,0
+608,Custodial,Disinfectant 1L,0
+609,Grounds,Grass Cutter Blade,0
+610,Plumbing,PVC Pipe 1/2,0
+611,Electrical,"PVC Pipe 1""",0
+612,Motorpool,Oil Filter DC518,0
+613,Electrical,Fluorescent Tube 40W,0
+614,Grounds,Grass Cutter Blade,0
+615,Buildings,Paint White 1L,0
+616,Refrigeration,Filter Drier 1/4,0
+617,Plumbing,Water Pump Motor,1
+618,Grounds,Garden Hoe,0
+619,Custodial,Detergent Powder 1kg,0
+620,Electrical,Ballast 20W,0
+621,Custodial,Detergent Powder 1kg,0
+622,Electrical,"PVC Pipe 1""",0
+623,Buildings,Cement Bag 40kg,1
+624,Motorpool,Oil Filter DC518,0
+625,Office,Whiteboard Marker,0
+626,Landscaping,Decorative Lights,0
+627,Grounds,Fertilizer 10kg,0
+628,Motorpool,Brake Fluid DOT3,0
+629,Office,Printer Ink Black,0
+630,Motorpool,Automotive Belt A-60,0
+631,Buildings,Paint White 1L,0
+632,Buildings,"Hollow Blocks 6""",0
+633,Office,Stapler No.35,0
+634,Office,Stapler No.35,0
+635,Plumbing,PVC Pipe 1/2,0
+636,Office,Whiteboard Marker,0
+637,Buildings,Cement Bag 40kg,0
+638,Office,Printer Ink Black,0
+639,Plumbing,"GI Elbow 1""",0
+640,Refrigeration,Copper Tube 3/8,0
+641,Plumbing,Pipe Sealant,0
+642,Plumbing,PVC Pipe 1/2,1
+643,Refrigeration,Filter Drier 1/4,0
+644,Motorpool,Brake Fluid DOT3,0
+645,Landscaping,Seed Pack,0
+646,Electrical,Flat Cord #16,0
+647,Motorpool,Automotive Belt A-60,0
+648,Landscaping,Ornamental Plant Pot,0
+649,Plumbing,"GI Elbow 1""",0
+650,Custodial,Trash Bag XL,1
+651,Office,Bond Paper A4,1
+652,Office,Bond Paper A4,0
+653,Refrigeration,Copper Tube 3/8,0
+654,Electrical,Ballast 20W,0
+655,Plumbing,Water Pump Motor,0
+656,Landscaping,Seed Pack,0
+657,Custodial,Trash Bag XL,1
+658,Landscaping,Decorative Lights,0
+659,Grounds,Shovel,0
+660,Custodial,Detergent Powder 1kg,0
+661,Buildings,"Hollow Blocks 6""",0
+662,Buildings,Roofing Nails,0
+663,Landscaping,Seed Pack,0
+664,Buildings,"Hollow Blocks 6""",0
+665,Grounds,Garden Hoe,0
+666,Motorpool,Diesel Engine Oil SAE 40,0
+667,Buildings,Roofing Nails,0
+668,Office,Bond Paper A4,0
+669,Refrigeration,Refrigerant R-22,0
+670,Grounds,Grass Cutter Blade,0
+671,Electrical,Flat Cord #16,0
+672,Buildings,"Hollow Blocks 6""",0
+673,Custodial,Detergent Powder 1kg,0
+674,Grounds,Grass Cutter Blade,1
+675,Plumbing,Pipe Sealant,0
+676,Plumbing,PVC Pipe 1/2,0
+677,Custodial,Floor Wax 500ml,0
+678,Electrical,Flat Cord #16,0
+679,Office,Bond Paper A4,0
+680,Office,Stapler No.35,0
+681,Buildings,Roofing Nails,0
+682,Office,Stapler No.35,0
+683,Grounds,Grass Cutter Blade,0
+684,Plumbing,PVC Pipe 1/2,0
+685,Custodial,Detergent Powder 1kg,0
+686,Custodial,Floor Wax 500ml,0
+687,Office,Bond Paper A4,0
+688,Office,Printer Ink Black,0
+689,Grounds,Garden Hoe,0
+690,Plumbing,Water Pump Motor,0
+691,Landscaping,Decorative Lights,0
+692,Grounds,Shovel,0
+693,Landscaping,Decorative Lights,0
+694,Landscaping,Garden Soil 5kg,1
+695,Motorpool,Automotive Belt A-60,0
+696,Motorpool,Oil Filter DC518,0
+697,Landscaping,Decorative Lights,0
+698,Plumbing,"GI Elbow 1""",1
+699,Office,Printer Ink Black,0
+700,Motorpool,Diesel Engine Oil SAE 40,0
+701,Office,Printer Ink Black,0
+702,Refrigeration,Filter Drier 1/4,0
+703,Electrical,"PVC Pipe 1""",0
+704,Grounds,Fertilizer 10kg,0
+705,Electrical,"PVC Pipe 1""",0
+706,Electrical,Fluorescent Tube 40W,0
+707,Grounds,Fertilizer 10kg,0
+708,Buildings,Cement Bag 40kg,0
+709,Custodial,Trash Bag XL,0
+710,Motorpool,Automotive Belt A-60,0
+711,Office,Stapler No.35,0
+712,Grounds,Grass Cutter Blade,0
+713,Motorpool,Automotive Belt A-60,0
+714,Office,Printer Ink Black,0
+715,Motorpool,Brake Fluid DOT3,0
+716,Custodial,Disinfectant 1L,1
+717,Office,Whiteboard Marker,0
+718,Buildings,Paint White 1L,0
+719,Motorpool,Oil Filter DC518,1
+720,Landscaping,Seed Pack,0
+721,Electrical,Flat Cord #16,0
+722,Office,Stapler No.35,0
+723,Electrical,Fluorescent Tube 40W,0
+724,Motorpool,Oil Filter DC518,0
+725,Grounds,Grass Cutter Blade,0
+726,Buildings,Roofing Nails,0
+727,Refrigeration,Filter Drier 1/4,0
+728,Custodial,Floor Wax 500ml,0
+729,Buildings,Roofing Nails,0
+730,Buildings,Roofing Nails,0
+731,Grounds,Garden Hoe,1
+732,Motorpool,Brake Fluid DOT3,0
+733,Custodial,Disinfectant 1L,0
+734,Electrical,"PVC Pipe 1""",0
+735,Landscaping,Decorative Lights,0
+736,Plumbing,"GI Elbow 1""",0
+737,Landscaping,Seed Pack,0
+738,Office,Stapler No.35,0
+739,Custodial,Detergent Powder 1kg,0
+740,Custodial,Floor Wax 500ml,0
+741,Refrigeration,Refrigerant R-22,0
+742,Motorpool,Automotive Belt A-60,0
+743,Grounds,Shovel,0
+744,Refrigeration,Refrigerant R-22,0
+745,Plumbing,Pipe Sealant,0
+746,Landscaping,Decorative Lights,0
+747,Landscaping,Decorative Lights,0
+748,Buildings,"Hollow Blocks 6""",0
+749,Grounds,Shovel,0
+750,Motorpool,Automotive Belt A-60,0
+751,Motorpool,Oil Filter DC518,0
+752,Electrical,Fluorescent Tube 40W,0
+753,Plumbing,Pipe Sealant,0
+754,Buildings,Paint White 1L,0
+755,Custodial,Trash Bag XL,0
+756,Refrigeration,Filter Drier 1/4,0
+757,Plumbing,Water Pump Motor,0
+758,Grounds,Garden Hoe,0
+759,Grounds,Garden Hoe,0
+760,Landscaping,Ornamental Plant Pot,0
+761,Plumbing,Pipe Sealant,0
+762,Custodial,Trash Bag XL,0
+763,Custodial,Floor Wax 500ml,0
+764,Grounds,Grass Cutter Blade,0
+765,Refrigeration,Copper Tube 3/8,1
+766,Grounds,Fertilizer 10kg,0
+767,Buildings,Cement Bag 40kg,1
+768,Refrigeration,Refrigerant R-22,0
+769,Electrical,Fluorescent Tube 40W,0
+770,Refrigeration,Copper Tube 3/8,0
+771,Electrical,Fluorescent Tube 40W,0
+772,Buildings,Cement Bag 40kg,0
+773,Buildings,Roofing Nails,0
+774,Office,Whiteboard Marker,0
+775,Motorpool,Brake Fluid DOT3,0
+776,Grounds,Grass Cutter Blade,0
+777,Motorpool,Diesel Engine Oil SAE 40,0
+778,Custodial,Disinfectant 1L,0
+779,Motorpool,Brake Fluid DOT3,0
+780,Office,Printer Ink Black,0
+781,Buildings,Paint White 1L,1
+782,Refrigeration,Filter Drier 1/4,0
+783,Buildings,"Hollow Blocks 6""",0
+784,Grounds,Fertilizer 10kg,1
+785,Office,Stapler No.35,0
+786,Refrigeration,Refrigerant R-22,0
+787,Buildings,Paint White 1L,0
+788,Plumbing,PVC Pipe 1/2,0
+789,Electrical,Ballast 20W,0
+790,Office,Whiteboard Marker,0
+791,Plumbing,"GI Elbow 1""",0
+792,Plumbing,Pipe Sealant,0
+793,Office,Bond Paper A4,0
+794,Buildings,Roofing Nails,0
+795,Office,Whiteboard Marker,0
+796,Electrical,Ballast 20W,0
+797,Grounds,Grass Cutter Blade,0
+798,Motorpool,Automotive Belt A-60,0
+799,Electrical,Ballast 20W,0
+800,Buildings,Paint White 1L,0
+801,Buildings,"Hollow Blocks 6""",0
+802,Office,Bond Paper A4,0
+803,Electrical,Ballast 20W,0
+804,Office,Printer Ink Black,0
+805,Motorpool,Brake Fluid DOT3,0
+806,Refrigeration,Copper Tube 3/8,0
+807,Landscaping,Seed Pack,0
+808,Custodial,Trash Bag XL,0
+809,Landscaping,Ornamental Plant Pot,0
+810,Buildings,Cement Bag 40kg,0
+811,Buildings,Paint White 1L,0
+812,Electrical,Fluorescent Tube 40W,0
+813,Custodial,Trash Bag XL,0
+814,Refrigeration,Filter Drier 1/4,0
+815,Grounds,Garden Hoe,0
+816,Landscaping,Decorative Lights,0
+817,Electrical,Ballast 20W,0
+818,Buildings,"Hollow Blocks 6""",0
+819,Buildings,Cement Bag 40kg,0
+820,Refrigeration,IC Relay 1/8,0
+821,Refrigeration,Copper Tube 3/8,0
+822,Custodial,Detergent Powder 1kg,0
+823,Landscaping,Decorative Lights,0
+824,Custodial,Floor Wax 500ml,0
+825,Office,Printer Ink Black,0
+826,Office,Whiteboard Marker,0
+827,Landscaping,Garden Soil 5kg,0
+828,Motorpool,Diesel Engine Oil SAE 40,0
+829,Refrigeration,IC Relay 1/8,0
+830,Electrical,Fluorescent Tube 40W,0
+831,Custodial,Trash Bag XL,0
+832,Electrical,"PVC Pipe 1""",0
+833,Refrigeration,IC Relay 1/8,0
+834,Grounds,Fertilizer 10kg,0
+835,Refrigeration,Filter Drier 1/4,0
+836,Landscaping,Garden Soil 5kg,0
+837,Office,Printer Ink Black,0
+838,Buildings,"Hollow Blocks 6""",0
+839,Grounds,Grass Cutter Blade,0
+840,Buildings,Roofing Nails,0
+841,Plumbing,Pipe Sealant,0
+842,Landscaping,Ornamental Plant Pot,0
+843,Electrical,Flat Cord #16,0
+844,Buildings,Roofing Nails,1
+845,Refrigeration,Copper Tube 3/8,0
+846,Grounds,Garden Hoe,0
+847,Buildings,Cement Bag 40kg,0
+848,Custodial,Floor Wax 500ml,0
+849,Custodial,Floor Wax 500ml,0
+850,Refrigeration,Refrigerant R-22,0
+851,Buildings,Roofing Nails,0
+852,Grounds,Shovel,0
+853,Grounds,Garden Hoe,0
+854,Refrigeration,IC Relay 1/8,0
+855,Grounds,Shovel,0
+856,Landscaping,Seed Pack,0
+857,Plumbing,Pipe Sealant,0
+858,Electrical,"PVC Pipe 1""",0
+859,Landscaping,Garden Soil 5kg,0
+860,Plumbing,PVC Pipe 1/2,0
+861,Plumbing,Water Pump Motor,0
+862,Grounds,Grass Cutter Blade,0
+863,Landscaping,Ornamental Plant Pot,0
+864,Plumbing,PVC Pipe 1/2,0
+865,Landscaping,Ornamental Plant Pot,0
+866,Landscaping,Garden Soil 5kg,0
+867,Custodial,Detergent Powder 1kg,0
+868,Electrical,"PVC Pipe 1""",1
+869,Plumbing,Water Pump Motor,0
+870,Office,Stapler No.35,0
+871,Grounds,Fertilizer 10kg,0
+872,Plumbing,PVC Pipe 1/2,0
+873,Office,Stapler No.35,0
+874,Custodial,Floor Wax 500ml,0
+875,Electrical,Fluorescent Tube 40W,0
+876,Refrigeration,Copper Tube 3/8,0
+877,Plumbing,Pipe Sealant,0
+878,Custodial,Floor Wax 500ml,0
+879,Landscaping,Seed Pack,0
+880,Electrical,Flat Cord #16,0
+881,Motorpool,Automotive Belt A-60,0
+882,Office,Printer Ink Black,1
+883,Motorpool,Automotive Belt A-60,0
+884,Landscaping,Ornamental Plant Pot,0
+885,Buildings,Paint White 1L,0
+886,Motorpool,Brake Fluid DOT3,0
+887,Buildings,"Hollow Blocks 6""",1
+888,Refrigeration,Copper Tube 3/8,0
+889,Buildings,Cement Bag 40kg,0
+890,Office,Bond Paper A4,0
+891,Landscaping,Garden Soil 5kg,0
+892,Electrical,Fluorescent Tube 40W,0
+893,Landscaping,Ornamental Plant Pot,0
+894,Grounds,Grass Cutter Blade,0
+895,Landscaping,Garden Soil 5kg,0
+896,Motorpool,Brake Fluid DOT3,0
+897,Custodial,Trash Bag XL,0
+898,Office,Whiteboard Marker,0
+899,Grounds,Grass Cutter Blade,0
+900,Refrigeration,Filter Drier 1/4,0
+901,Plumbing,Water Pump Motor,1
+902,Motorpool,Automotive Belt A-60,0
+903,Custodial,Disinfectant 1L,0
+904,Landscaping,Ornamental Plant Pot,0
+905,Landscaping,Garden Soil 5kg,0
+906,Grounds,Garden Hoe,0
+907,Refrigeration,Copper Tube 3/8,0
+908,Buildings,Paint White 1L,0
+909,Refrigeration,Refrigerant R-22,0
+910,Plumbing,"GI Elbow 1""",0
+911,Electrical,"PVC Pipe 1""",0
+912,Motorpool,Oil Filter DC518,0
+913,Custodial,Detergent Powder 1kg,0
+914,Plumbing,"GI Elbow 1""",0
+915,Buildings,Paint White 1L,1
+916,Office,Bond Paper A4,0
+917,Custodial,Floor Wax 500ml,0
+918,Office,Stapler No.35,0
+919,Custodial,Detergent Powder 1kg,0
+920,Office,Printer Ink Black,0
+921,Motorpool,Diesel Engine Oil SAE 40,0
+922,Landscaping,Seed Pack,0
+923,Electrical,Ballast 20W,0
+924,Buildings,Cement Bag 40kg,0
+925,Custodial,Trash Bag XL,0
+926,Refrigeration,Copper Tube 3/8,0
+927,Motorpool,Brake Fluid DOT3,0
+928,Refrigeration,Filter Drier 1/4,0
+929,Grounds,Garden Hoe,0
+930,Landscaping,Ornamental Plant Pot,0
+931,Buildings,"Hollow Blocks 6""",1
+932,Office,Printer Ink Black,0
+933,Electrical,Fluorescent Tube 40W,1
+934,Buildings,Roofing Nails,0
+935,Electrical,Flat Cord #16,0
+936,Electrical,Ballast 20W,0
+937,Landscaping,Ornamental Plant Pot,0
+938,Electrical,Ballast 20W,0
+939,Landscaping,Decorative Lights,0
+940,Refrigeration,IC Relay 1/8,0
+941,Motorpool,Diesel Engine Oil SAE 40,0
+942,Office,Bond Paper A4,0
+943,Refrigeration,Filter Drier 1/4,0
+944,Landscaping,Seed Pack,0
+945,Buildings,Paint White 1L,0
+946,Office,Whiteboard Marker,0
+947,Custodial,Floor Wax 500ml,1
+948,Landscaping,Decorative Lights,0
+949,Landscaping,Seed Pack,0
+950,Office,Bond Paper A4,0
+951,Landscaping,Ornamental Plant Pot,0
+952,Landscaping,Seed Pack,0
+953,Buildings,"Hollow Blocks 6""",0
+954,Refrigeration,Copper Tube 3/8,0
+955,Buildings,Cement Bag 40kg,0
+956,Grounds,Garden Hoe,0
+957,Grounds,Grass Cutter Blade,0
+958,Electrical,Ballast 20W,0
+959,Electrical,"PVC Pipe 1""",0
+960,Grounds,Shovel,0
+961,Refrigeration,Copper Tube 3/8,0
+962,Plumbing,PVC Pipe 1/2,0
+963,Refrigeration,Filter Drier 1/4,0
+964,Electrical,Flat Cord #16,0
+965,Grounds,Shovel,0
+966,Plumbing,Water Pump Motor,0
+967,Motorpool,Automotive Belt A-60,0
+968,Grounds,Grass Cutter Blade,0
+969,Refrigeration,Copper Tube 3/8,0
+970,Grounds,Grass Cutter Blade,0
+971,Grounds,Fertilizer 10kg,0
+972,Refrigeration,Refrigerant R-22,1
+973,Buildings,Paint White 1L,0
+974,Motorpool,Automotive Belt A-60,0
+975,Landscaping,Garden Soil 5kg,0
+976,Grounds,Fertilizer 10kg,0
+977,Motorpool,Automotive Belt A-60,0
+978,Buildings,Paint White 1L,0
+979,Office,Printer Ink Black,0
+980,Custodial,Trash Bag XL,0
+981,Landscaping,Garden Soil 5kg,0
+982,Buildings,Paint White 1L,0
+983,Electrical,"PVC Pipe 1""",0
+984,Grounds,Shovel,0
+985,Plumbing,Water Pump Motor,0
+986,Buildings,Paint White 1L,0
+987,Electrical,Flat Cord #16,0
+988,Motorpool,Diesel Engine Oil SAE 40,0
+989,Grounds,Grass Cutter Blade,0
+990,Grounds,Garden Hoe,0
+991,Landscaping,Decorative Lights,0
+992,Custodial,Detergent Powder 1kg,0
+993,Refrigeration,Filter Drier 1/4,0
+994,Motorpool,Oil Filter DC518,0
+995,Custodial,Disinfectant 1L,0
+996,Refrigeration,IC Relay 1/8,0
+997,Grounds,Fertilizer 10kg,0
+998,Grounds,Garden Hoe,0
+999,Plumbing,Water Pump Motor,0
+1000,Custodial,Detergent Powder 1kg,0
+1001,Motorpool,Oil Filter DC518,0
+1002,Custodial,Trash Bag XL,0
+1003,Custodial,Disinfectant 1L,0
+1004,Custodial,Trash Bag XL,0
+1005,Buildings,Cement Bag 40kg,0
+1006,Plumbing,"GI Elbow 1""",0
+1007,Plumbing,Water Pump Motor,0
+1008,Custodial,Disinfectant 1L,0
+1009,Landscaping,Ornamental Plant Pot,0
+1010,Office,Bond Paper A4,0
+1011,Electrical,Ballast 20W,0
+1012,Custodial,Detergent Powder 1kg,0
+1013,Landscaping,Decorative Lights,0
+1014,Office,Bond Paper A4,0
+1015,Custodial,Trash Bag XL,0
+1016,Custodial,Detergent Powder 1kg,0
+1017,Refrigeration,Refrigerant R-22,0
+1018,Electrical,Flat Cord #16,0
+1019,Motorpool,Automotive Belt A-60,0
+1020,Motorpool,Automotive Belt A-60,0
+1021,Motorpool,Automotive Belt A-60,1
+1022,Motorpool,Automotive Belt A-60,0
+1023,Refrigeration,Refrigerant R-22,0
+1024,Landscaping,Garden Soil 5kg,0
+1025,Plumbing,Pipe Sealant,0
+1026,Motorpool,Diesel Engine Oil SAE 40,0
+1027,Buildings,"Hollow Blocks 6""",0
+1028,Electrical,Fluorescent Tube 40W,0
+1029,Refrigeration,Refrigerant R-22,0
+1030,Refrigeration,Refrigerant R-22,0
+1031,Refrigeration,Copper Tube 3/8,1
+1032,Buildings,Roofing Nails,0
+1033,Grounds,Fertilizer 10kg,0
+1034,Grounds,Garden Hoe,0
+1035,Office,Whiteboard Marker,0
+1036,Plumbing,Pipe Sealant,0
+1037,Landscaping,Seed Pack,0
+1038,Electrical,Ballast 20W,0
+1039,Refrigeration,IC Relay 1/8,0
+1040,Motorpool,Automotive Belt A-60,0
+1041,Landscaping,Garden Soil 5kg,0
+1042,Plumbing,Water Pump Motor,0
+1043,Electrical,Flat Cord #16,0
+1044,Landscaping,Ornamental Plant Pot,0
+1045,Landscaping,Ornamental Plant Pot,0
+1046,Custodial,Trash Bag XL,0
+1047,Custodial,Detergent Powder 1kg,0
+1048,Refrigeration,Filter Drier 1/4,0
+1049,Buildings,Roofing Nails,0
+1050,Motorpool,Automotive Belt A-60,0
+1051,Landscaping,Garden Soil 5kg,0
+1052,Grounds,Fertilizer 10kg,0
+1053,Office,Printer Ink Black,0
+1054,Buildings,Roofing Nails,0
+1055,Grounds,Fertilizer 10kg,0
+1056,Landscaping,Garden Soil 5kg,0
+1057,Electrical,Fluorescent Tube 40W,0
+1058,Motorpool,Oil Filter DC518,1
+1059,Motorpool,Oil Filter DC518,0
+1060,Grounds,Shovel,0
+1061,Refrigeration,Copper Tube 3/8,0
+1062,Buildings,Cement Bag 40kg,0
+1063,Landscaping,Garden Soil 5kg,0
+1064,Buildings,Roofing Nails,0
+1065,Landscaping,Decorative Lights,0
+1066,Refrigeration,IC Relay 1/8,0
+1067,Buildings,"Hollow Blocks 6""",0
+1068,Buildings,Cement Bag 40kg,0
+1069,Office,Printer Ink Black,0
+1070,Custodial,Detergent Powder 1kg,1
+1071,Plumbing,PVC Pipe 1/2,0
+1072,Grounds,Shovel,0
+1073,Custodial,Trash Bag XL,0
+1074,Buildings,"Hollow Blocks 6""",0
+1075,Custodial,Trash Bag XL,0
+1076,Buildings,Paint White 1L,0
+1077,Plumbing,"GI Elbow 1""",0
+1078,Landscaping,Decorative Lights,0
+1079,Grounds,Shovel,0
+1080,Refrigeration,Filter Drier 1/4,0
+1081,Motorpool,Diesel Engine Oil SAE 40,0
+1082,Office,Bond Paper A4,0
+1083,Plumbing,PVC Pipe 1/2,0
+1084,Custodial,Trash Bag XL,0
+1085,Refrigeration,Refrigerant R-22,0
+1086,Custodial,Trash Bag XL,0
+1087,Refrigeration,Refrigerant R-22,1
+1088,Plumbing,PVC Pipe 1/2,0
+1089,Landscaping,Ornamental Plant Pot,0
+1090,Refrigeration,IC Relay 1/8,0
+1091,Landscaping,Ornamental Plant Pot,0
+1092,Grounds,Shovel,0
+1093,Plumbing,PVC Pipe 1/2,0
+1094,Electrical,Ballast 20W,0
+1095,Office,Bond Paper A4,0
+1096,Plumbing,"GI Elbow 1""",0
+1097,Landscaping,Seed Pack,1
+1098,Electrical,"PVC Pipe 1""",0
+1099,Refrigeration,Refrigerant R-22,0
+1100,Buildings,"Hollow Blocks 6""",0
+1101,Plumbing,Water Pump Motor,0
+1102,Refrigeration,Filter Drier 1/4,0
+1103,Landscaping,Decorative Lights,0
+1104,Buildings,"Hollow Blocks 6""",0
+1105,Refrigeration,IC Relay 1/8,0
+1106,Office,Printer Ink Black,0
+1107,Motorpool,Diesel Engine Oil SAE 40,0
+1108,Buildings,"Hollow Blocks 6""",0
+1109,Custodial,Detergent Powder 1kg,0
+1110,Custodial,Detergent Powder 1kg,0
+1111,Refrigeration,Filter Drier 1/4,0
+1112,Buildings,"Hollow Blocks 6""",1
+1113,Electrical,"PVC Pipe 1""",0
+1114,Landscaping,Seed Pack,0
+1115,Refrigeration,Refrigerant R-22,0
+1116,Grounds,Shovel,0
+1117,Electrical,"PVC Pipe 1""",0
+1118,Landscaping,Seed Pack,0
+1119,Electrical,Ballast 20W,0
+1120,Landscaping,Decorative Lights,0
+1121,Motorpool,Brake Fluid DOT3,0
+1122,Office,Stapler No.35,0
+1123,Landscaping,Seed Pack,0
+1124,Buildings,Roofing Nails,0
+1125,Electrical,"PVC Pipe 1""",0
+1126,Office,Whiteboard Marker,0
+1127,Office,Stapler No.35,0
+1128,Landscaping,Decorative Lights,0
+1129,Office,Printer Ink Black,0
+1130,Landscaping,Seed Pack,0
+1131,Buildings,Paint White 1L,0
+1132,Motorpool,Automotive Belt A-60,0
+1133,Office,Stapler No.35,0
+1134,Landscaping,Garden Soil 5kg,0
+1135,Buildings,Roofing Nails,0
+1136,Motorpool,Diesel Engine Oil SAE 40,0
+1137,Motorpool,Brake Fluid DOT3,0
+1138,Plumbing,PVC Pipe 1/2,0
+1139,Plumbing,PVC Pipe 1/2,0
+1140,Office,Bond Paper A4,0
+1141,Landscaping,Seed Pack,0
+1142,Refrigeration,Filter Drier 1/4,0
+1143,Motorpool,Oil Filter DC518,0
+1144,Electrical,Flat Cord #16,0
+1145,Grounds,Garden Hoe,0
+1146,Refrigeration,Refrigerant R-22,0
+1147,Refrigeration,Filter Drier 1/4,0
+1148,Plumbing,Pipe Sealant,0
+1149,Buildings,Roofing Nails,0
+1150,Office,Bond Paper A4,1
+1151,Motorpool,Automotive Belt A-60,0
+1152,Plumbing,"GI Elbow 1""",0
+1153,Grounds,Shovel,0
+1154,Office,Printer Ink Black,0
+1155,Refrigeration,Filter Drier 1/4,1
+1156,Office,Stapler No.35,0
+1157,Electrical,"PVC Pipe 1""",0
+1158,Grounds,Grass Cutter Blade,0
+1159,Electrical,Fluorescent Tube 40W,0
+1160,Landscaping,Seed Pack,0
+1161,Custodial,Disinfectant 1L,0
+1162,Electrical,Fluorescent Tube 40W,0
+1163,Electrical,Ballast 20W,0
+1164,Motorpool,Brake Fluid DOT3,0
+1165,Refrigeration,Refrigerant R-22,0
+1166,Motorpool,Oil Filter DC518,0
+1167,Electrical,Fluorescent Tube 40W,0
+1168,Electrical,Ballast 20W,0
+1169,Custodial,Floor Wax 500ml,0
+1170,Office,Whiteboard Marker,0
+1171,Electrical,Fluorescent Tube 40W,0
+1172,Electrical,Flat Cord #16,0
+1173,Refrigeration,Refrigerant R-22,0
+1174,Plumbing,Water Pump Motor,0
+1175,Motorpool,Oil Filter DC518,0
+1176,Electrical,Ballast 20W,0
+1177,Plumbing,"GI Elbow 1""",0
+1178,Custodial,Detergent Powder 1kg,1
+1179,Buildings,"Hollow Blocks 6""",0
+1180,Office,Stapler No.35,0
+1181,Custodial,Floor Wax 500ml,0
+1182,Refrigeration,Copper Tube 3/8,0
+1183,Buildings,"Hollow Blocks 6""",0
+1184,Motorpool,Brake Fluid DOT3,0
+1185,Buildings,Roofing Nails,0
+1186,Landscaping,Garden Soil 5kg,0
+1187,Buildings,Paint White 1L,1
+1188,Electrical,Fluorescent Tube 40W,0
+1189,Office,Printer Ink Black,0
+1190,Buildings,Paint White 1L,0
+1191,Office,Stapler No.35,0
+1192,Custodial,Disinfectant 1L,0
+1193,Office,Stapler No.35,0
+1194,Office,Stapler No.35,0
+1195,Plumbing,Pipe Sealant,0
+1196,Landscaping,Seed Pack,0
+1197,Grounds,Fertilizer 10kg,0
+1198,Buildings,Roofing Nails,0
+1199,Landscaping,Garden Soil 5kg,0
+1200,Grounds,Grass Cutter Blade,0
+1201,Landscaping,Decorative Lights,0
+1202,Landscaping,Ornamental Plant Pot,0
+1203,Landscaping,Decorative Lights,0
+1204,Electrical,Fluorescent Tube 40W,0
+1205,Grounds,Garden Hoe,0
+1206,Grounds,Garden Hoe,1
+1207,Refrigeration,Copper Tube 3/8,0
+1208,Grounds,Grass Cutter Blade,0
+1209,Electrical,Fluorescent Tube 40W,0
+1210,Custodial,Trash Bag XL,0
+1211,Motorpool,Brake Fluid DOT3,0
+1212,Landscaping,Decorative Lights,0
+1213,Grounds,Grass Cutter Blade,0
+1214,Plumbing,PVC Pipe 1/2,0
+1215,Buildings,Paint White 1L,0
+1216,Refrigeration,Copper Tube 3/8,0
+1217,Custodial,Floor Wax 500ml,0
+1218,Office,Bond Paper A4,0
+1219,Refrigeration,IC Relay 1/8,0
+1220,Electrical,Fluorescent Tube 40W,0
+1221,Electrical,Ballast 20W,0
+1222,Motorpool,Brake Fluid DOT3,0
+1223,Custodial,Detergent Powder 1kg,0
+1224,Buildings,"Hollow Blocks 6""",0
+1225,Custodial,Detergent Powder 1kg,0
+1226,Custodial,Floor Wax 500ml,0
+1227,Buildings,Cement Bag 40kg,0
+1228,Refrigeration,Refrigerant R-22,0
+1229,Custodial,Disinfectant 1L,0
+1230,Landscaping,Ornamental Plant Pot,0
+1231,Motorpool,Brake Fluid DOT3,0
+1232,Landscaping,Ornamental Plant Pot,0
+1233,Motorpool,Oil Filter DC518,0
+1234,Motorpool,Automotive Belt A-60,0
+1235,Electrical,"PVC Pipe 1""",0
+1236,Motorpool,Diesel Engine Oil SAE 40,0
+1237,Refrigeration,IC Relay 1/8,0
+1238,Plumbing,Pipe Sealant,1
+1239,Plumbing,Water Pump Motor,0
+1240,Buildings,Cement Bag 40kg,1
+1241,Buildings,Cement Bag 40kg,1
+1242,Landscaping,Ornamental Plant Pot,1
+1243,Motorpool,Diesel Engine Oil SAE 40,0
+1244,Electrical,Ballast 20W,0
+1245,Electrical,Fluorescent Tube 40W,0
+1246,Plumbing,"GI Elbow 1""",0
+1247,Electrical,"PVC Pipe 1""",0
+1248,Plumbing,Water Pump Motor,0
+1249,Grounds,Shovel,0
+1250,Buildings,"Hollow Blocks 6""",0
+1251,Landscaping,Ornamental Plant Pot,0
+1252,Electrical,Ballast 20W,0
+1253,Electrical,Flat Cord #16,0
+1254,Motorpool,Oil Filter DC518,0
+1255,Plumbing,Pipe Sealant,0
+1256,Refrigeration,Filter Drier 1/4,0
+1257,Motorpool,Oil Filter DC518,0
+1258,Refrigeration,Filter Drier 1/4,0
+1259,Landscaping,Ornamental Plant Pot,0
+1260,Landscaping,Decorative Lights,0
+1261,Grounds,Shovel,0
+1262,Motorpool,Oil Filter DC518,0
+1263,Refrigeration,IC Relay 1/8,0
+1264,Buildings,Paint White 1L,0
+1265,Plumbing,Water Pump Motor,0
+1266,Custodial,Trash Bag XL,1
+1267,Grounds,Fertilizer 10kg,1
+1268,Office,Printer Ink Black,0
+1269,Plumbing,PVC Pipe 1/2,0
+1270,Landscaping,Seed Pack,0
+1271,Plumbing,PVC Pipe 1/2,0
+1272,Office,Whiteboard Marker,0
+1273,Office,Stapler No.35,0
+1274,Custodial,Floor Wax 500ml,0
+1275,Custodial,Floor Wax 500ml,0
+1276,Grounds,Grass Cutter Blade,0
+1277,Landscaping,Seed Pack,0
+1278,Grounds,Fertilizer 10kg,0
+1279,Refrigeration,Filter Drier 1/4,0
+1280,Motorpool,Brake Fluid DOT3,0
+1281,Custodial,Floor Wax 500ml,0
+1282,Grounds,Fertilizer 10kg,1
+1283,Electrical,Ballast 20W,0
+1284,Grounds,Grass Cutter Blade,0
+1285,Plumbing,Water Pump Motor,0
+1286,Landscaping,Garden Soil 5kg,0
+1287,Grounds,Shovel,0
+1288,Plumbing,"GI Elbow 1""",0
+1289,Motorpool,Oil Filter DC518,0
+1290,Electrical,"PVC Pipe 1""",0
+1291,Electrical,"PVC Pipe 1""",0
+1292,Office,Printer Ink Black,1
+1293,Office,Stapler No.35,0
+1294,Grounds,Garden Hoe,0
+1295,Grounds,Grass Cutter Blade,0
+1296,Custodial,Floor Wax 500ml,0
+1297,Custodial,Floor Wax 500ml,0
+1298,Electrical,"PVC Pipe 1""",0
+1299,Custodial,Floor Wax 500ml,0
+1300,Electrical,Flat Cord #16,0
+1301,Office,Stapler No.35,0
+1302,Plumbing,PVC Pipe 1/2,0
+1303,Grounds,Grass Cutter Blade,1
+1304,Plumbing,Water Pump Motor,0
+1305,Office,Stapler No.35,0
+1306,Buildings,"Hollow Blocks 6""",0
+1307,Office,Printer Ink Black,0
+1308,Grounds,Shovel,0
+1309,Landscaping,Ornamental Plant Pot,0
+1310,Electrical,"PVC Pipe 1""",0
+1311,Landscaping,Ornamental Plant Pot,0
+1312,Motorpool,Automotive Belt A-60,0
+1313,Office,Printer Ink Black,0
+1314,Electrical,Ballast 20W,0
+1315,Custodial,Disinfectant 1L,0
+1316,Landscaping,Garden Soil 5kg,0
+1317,Custodial,Disinfectant 1L,0
+1318,Plumbing,Water Pump Motor,0
+1319,Refrigeration,IC Relay 1/8,0
+1320,Buildings,Paint White 1L,0
+1321,Refrigeration,IC Relay 1/8,0
+1322,Motorpool,Automotive Belt A-60,0
+1323,Custodial,Trash Bag XL,0
+1324,Office,Bond Paper A4,0
+1325,Refrigeration,Refrigerant R-22,0
+1326,Landscaping,Seed Pack,0
+1327,Custodial,Disinfectant 1L,0
+1328,Custodial,Disinfectant 1L,0
+1329,Electrical,"PVC Pipe 1""",0
+1330,Plumbing,"GI Elbow 1""",0
+1331,Office,Bond Paper A4,0
+1332,Office,Stapler No.35,0
+1333,Grounds,Garden Hoe,0
+1334,Motorpool,Oil Filter DC518,0
+1335,Plumbing,"GI Elbow 1""",0
+1336,Custodial,Floor Wax 500ml,0
+1337,Office,Bond Paper A4,0
+1338,Plumbing,Water Pump Motor,0
+1339,Grounds,Garden Hoe,0
+1340,Office,Bond Paper A4,0
+1341,Custodial,Disinfectant 1L,0
+1342,Electrical,Ballast 20W,0
+1343,Buildings,Paint White 1L,0
+1344,Motorpool,Automotive Belt A-60,0
+1345,Landscaping,Ornamental Plant Pot,0
+1346,Office,Whiteboard Marker,0
+1347,Custodial,Trash Bag XL,0
+1348,Buildings,Cement Bag 40kg,0
+1349,Plumbing,Pipe Sealant,0
+1350,Motorpool,Oil Filter DC518,0
+1351,Plumbing,Water Pump Motor,0
+1352,Buildings,Roofing Nails,0
+1353,Electrical,Flat Cord #16,0
+1354,Refrigeration,IC Relay 1/8,1
+1355,Office,Whiteboard Marker,0
+1356,Landscaping,Ornamental Plant Pot,0
+1357,Grounds,Fertilizer 10kg,0
+1358,Refrigeration,Filter Drier 1/4,0
+1359,Office,Whiteboard Marker,0
+1360,Electrical,"PVC Pipe 1""",0
+1361,Motorpool,Diesel Engine Oil SAE 40,0
+1362,Office,Stapler No.35,0
+1363,Refrigeration,IC Relay 1/8,0
+1364,Electrical,Flat Cord #16,0
+1365,Grounds,Fertilizer 10kg,0
+1366,Plumbing,"GI Elbow 1""",0
+1367,Refrigeration,IC Relay 1/8,1
+1368,Electrical,Fluorescent Tube 40W,0
+1369,Landscaping,Ornamental Plant Pot,0
+1370,Grounds,Fertilizer 10kg,0
+1371,Buildings,Paint White 1L,0
+1372,Landscaping,Ornamental Plant Pot,0
+1373,Office,Bond Paper A4,0
+1374,Motorpool,Oil Filter DC518,0
+1375,Office,Bond Paper A4,0
+1376,Buildings,Cement Bag 40kg,0
+1377,Plumbing,"GI Elbow 1""",0
+1378,Custodial,Disinfectant 1L,0
+1379,Landscaping,Garden Soil 5kg,0
+1380,Office,Stapler No.35,0
+1381,Buildings,Roofing Nails,0
+1382,Custodial,Trash Bag XL,0
+1383,Grounds,Grass Cutter Blade,0
+1384,Plumbing,Pipe Sealant,1
+1385,Buildings,"Hollow Blocks 6""",0
+1386,Plumbing,PVC Pipe 1/2,0
+1387,Office,Bond Paper A4,0
+1388,Electrical,Ballast 20W,0
+1389,Motorpool,Diesel Engine Oil SAE 40,0
+1390,Electrical,Fluorescent Tube 40W,0
+1391,Grounds,Grass Cutter Blade,0
+1392,Electrical,Flat Cord #16,0
+1393,Grounds,Garden Hoe,1
+1394,Motorpool,Brake Fluid DOT3,1
+1395,Plumbing,Water Pump Motor,0
+1396,Custodial,Disinfectant 1L,0
+1397,Motorpool,Automotive Belt A-60,0
+1398,Custodial,Detergent Powder 1kg,0
+1399,Electrical,"PVC Pipe 1""",0
+1400,Custodial,Disinfectant 1L,0
+1401,Office,Stapler No.35,0
+1402,Grounds,Shovel,0
+1403,Buildings,Cement Bag 40kg,0
+1404,Custodial,Trash Bag XL,0
+1405,Custodial,Disinfectant 1L,0
+1406,Office,Stapler No.35,0
+1407,Office,Printer Ink Black,0
+1408,Buildings,Cement Bag 40kg,0
+1409,Custodial,Detergent Powder 1kg,0
+1410,Landscaping,Seed Pack,0
+1411,Plumbing,Pipe Sealant,0
+1412,Custodial,Detergent Powder 1kg,0
+1413,Buildings,Roofing Nails,0
+1414,Office,Whiteboard Marker,0
+1415,Refrigeration,Filter Drier 1/4,0
+1416,Grounds,Garden Hoe,0
+1417,Buildings,Cement Bag 40kg,0
+1418,Landscaping,Decorative Lights,0
+1419,Motorpool,Oil Filter DC518,0
+1420,Office,Whiteboard Marker,0
+1421,Electrical,Flat Cord #16,0
+1422,Motorpool,Oil Filter DC518,0
+1423,Office,Whiteboard Marker,0
+1424,Grounds,Garden Hoe,0
+1425,Plumbing,Pipe Sealant,0
+1426,Office,Stapler No.35,0
+1427,Grounds,Garden Hoe,0
+1428,Plumbing,PVC Pipe 1/2,0
+1429,Plumbing,Water Pump Motor,0
+1430,Custodial,Floor Wax 500ml,0
+1431,Refrigeration,Copper Tube 3/8,0
+1432,Landscaping,Seed Pack,0
+1433,Landscaping,Ornamental Plant Pot,0
+1434,Office,Stapler No.35,0
+1435,Grounds,Fertilizer 10kg,0
+1436,Refrigeration,Refrigerant R-22,0
+1437,Custodial,Detergent Powder 1kg,1
+1438,Landscaping,Seed Pack,0
+1439,Refrigeration,IC Relay 1/8,0
+1440,Custodial,Trash Bag XL,0
+1441,Motorpool,Brake Fluid DOT3,0
+1442,Plumbing,PVC Pipe 1/2,1
+1443,Grounds,Fertilizer 10kg,0
+1444,Custodial,Floor Wax 500ml,0
+1445,Plumbing,PVC Pipe 1/2,0
+1446,Plumbing,"GI Elbow 1""",1
+1447,Electrical,"PVC Pipe 1""",0
+1448,Landscaping,Decorative Lights,0
+1449,Office,Stapler No.35,0
+1450,Custodial,Trash Bag XL,0
+1451,Refrigeration,Refrigerant R-22,0
+1452,Electrical,Flat Cord #16,0
+1453,Buildings,Paint White 1L,0
+1454,Landscaping,Seed Pack,0
+1455,Grounds,Fertilizer 10kg,0
+1456,Office,Printer Ink Black,0
+1457,Grounds,Grass Cutter Blade,0
+1458,Office,Stapler No.35,0
+1459,Custodial,Floor Wax 500ml,0
+1460,Office,Printer Ink Black,0
+1461,Plumbing,Water Pump Motor,0
+1462,Electrical,"PVC Pipe 1""",0
+1463,Electrical,Fluorescent Tube 40W,0
+1464,Custodial,Trash Bag XL,0
+1465,Landscaping,Ornamental Plant Pot,0
+1466,Office,Bond Paper A4,0
+1467,Refrigeration,Copper Tube 3/8,0
+1468,Refrigeration,Refrigerant R-22,0
+1469,Refrigeration,Copper Tube 3/8,0
+1470,Refrigeration,Copper Tube 3/8,0
+1471,Buildings,Paint White 1L,0
+1472,Refrigeration,Refrigerant R-22,0
+1473,Electrical,Flat Cord #16,1
+1474,Refrigeration,Filter Drier 1/4,0
+1475,Motorpool,Brake Fluid DOT3,0
+1476,Refrigeration,IC Relay 1/8,0
+1477,Custodial,Detergent Powder 1kg,0
+1478,Grounds,Grass Cutter Blade,0
+1479,Grounds,Shovel,0
+1480,Buildings,Cement Bag 40kg,0
+1481,Grounds,Fertilizer 10kg,0
+1482,Electrical,Ballast 20W,0
+1483,Motorpool,Oil Filter DC518,0
+1484,Buildings,"Hollow Blocks 6""",0
+1485,Landscaping,Garden Soil 5kg,0
+1486,Plumbing,"GI Elbow 1""",0
+1487,Office,Bond Paper A4,0
+1488,Office,Bond Paper A4,0
+1489,Grounds,Shovel,1
+1490,Plumbing,PVC Pipe 1/2,0
+1491,Office,Printer Ink Black,0
+1492,Office,Bond Paper A4,0
+1493,Custodial,Detergent Powder 1kg,0
+1494,Landscaping,Ornamental Plant Pot,0
+1495,Plumbing,Pipe Sealant,0
+1496,Grounds,Shovel,0
+1497,Office,Whiteboard Marker,0
+1498,Landscaping,Garden Soil 5kg,0
+1499,Landscaping,Decorative Lights,0
+1500,Plumbing,PVC Pipe 1/2,0
+1501,Electrical,Fluorescent Tube 40W,0
+1502,Buildings,Paint White 1L,0
+1503,Motorpool,Brake Fluid DOT3,0
+1504,Buildings,Cement Bag 40kg,0
+1505,Landscaping,Decorative Lights,0
+1506,Office,Bond Paper A4,0
+1507,Landscaping,Ornamental Plant Pot,0
+1508,Plumbing,"GI Elbow 1""",0
+1509,Grounds,Grass Cutter Blade,0
+1510,Motorpool,Oil Filter DC518,0
+1511,Electrical,Flat Cord #16,0
+1512,Plumbing,Pipe Sealant,0
+1513,Motorpool,Diesel Engine Oil SAE 40,0
+1514,Motorpool,Automotive Belt A-60,0
+1515,Refrigeration,Copper Tube 3/8,0
+1516,Electrical,Flat Cord #16,0
+1517,Custodial,Detergent Powder 1kg,0
+1518,Office,Bond Paper A4,0
+1519,Office,Printer Ink Black,1
+1520,Office,Whiteboard Marker,0
+1521,Buildings,"Hollow Blocks 6""",0
+1522,Buildings,Cement Bag 40kg,0
+1523,Custodial,Floor Wax 500ml,0
+1524,Landscaping,Garden Soil 5kg,0
+1525,Grounds,Garden Hoe,0
+1526,Landscaping,Garden Soil 5kg,0
+1527,Custodial,Disinfectant 1L,0
+1528,Plumbing,PVC Pipe 1/2,0
+1529,Electrical,"PVC Pipe 1""",0
+1530,Buildings,"Hollow Blocks 6""",0
+1531,Office,Bond Paper A4,0
+1532,Buildings,Roofing Nails,0
+1533,Buildings,Roofing Nails,0
+1534,Electrical,Ballast 20W,0
+1535,Buildings,"Hollow Blocks 6""",1
+1536,Motorpool,Brake Fluid DOT3,0
+1537,Office,Bond Paper A4,0
+1538,Plumbing,PVC Pipe 1/2,0
+1539,Office,Stapler No.35,0
+1540,Grounds,Grass Cutter Blade,0
+1541,Grounds,Grass Cutter Blade,0
+1542,Grounds,Garden Hoe,1
+1543,Buildings,"Hollow Blocks 6""",0
+1544,Plumbing,"GI Elbow 1""",0
+1545,Motorpool,Brake Fluid DOT3,0
+1546,Landscaping,Seed Pack,0
+1547,Electrical,"PVC Pipe 1""",0
+1548,Electrical,Ballast 20W,0
+1549,Refrigeration,IC Relay 1/8,0
+1550,Refrigeration,Filter Drier 1/4,0
+1551,Custodial,Detergent Powder 1kg,0
+1552,Plumbing,Pipe Sealant,0
+1553,Landscaping,Decorative Lights,0
+1554,Refrigeration,IC Relay 1/8,0
+1555,Electrical,Flat Cord #16,0
+1556,Refrigeration,IC Relay 1/8,0
+1557,Buildings,Roofing Nails,0
+1558,Motorpool,Oil Filter DC518,0
+1559,Buildings,Cement Bag 40kg,0
+1560,Refrigeration,Refrigerant R-22,0
+1561,Landscaping,Seed Pack,0
+1562,Electrical,Flat Cord #16,0
+1563,Refrigeration,Copper Tube 3/8,0
+1564,Grounds,Fertilizer 10kg,0
+1565,Office,Whiteboard Marker,0
+1566,Motorpool,Automotive Belt A-60,0
+1567,Office,Whiteboard Marker,0
+1568,Landscaping,Seed Pack,1
+1569,Plumbing,Water Pump Motor,0
+1570,Landscaping,Decorative Lights,0
+1571,Motorpool,Oil Filter DC518,0
+1572,Refrigeration,IC Relay 1/8,0
+1573,Grounds,Garden Hoe,0
+1574,Plumbing,PVC Pipe 1/2,0
+1575,Refrigeration,Copper Tube 3/8,0
+1576,Refrigeration,Refrigerant R-22,0
+1577,Landscaping,Seed Pack,1
+1578,Landscaping,Decorative Lights,0
+1579,Plumbing,Water Pump Motor,0
+1580,Plumbing,Pipe Sealant,0
+1581,Office,Printer Ink Black,0
+1582,Custodial,Disinfectant 1L,0
+1583,Motorpool,Brake Fluid DOT3,0
+1584,Electrical,Flat Cord #16,0
+1585,Motorpool,Diesel Engine Oil SAE 40,0
+1586,Motorpool,Diesel Engine Oil SAE 40,0
+1587,Electrical,Fluorescent Tube 40W,0
+1588,Electrical,"PVC Pipe 1""",0
+1589,Landscaping,Seed Pack,0
+1590,Refrigeration,Refrigerant R-22,0
+1591,Custodial,Trash Bag XL,0
+1592,Buildings,Cement Bag 40kg,0
+1593,Office,Whiteboard Marker,0
+1594,Grounds,Shovel,0
+1595,Refrigeration,Copper Tube 3/8,0
+1596,Landscaping,Ornamental Plant Pot,0
+1597,Refrigeration,IC Relay 1/8,0
+1598,Landscaping,Seed Pack,0
+1599,Motorpool,Brake Fluid DOT3,0
+1600,Landscaping,Seed Pack,1
+1601,Buildings,Cement Bag 40kg,0
+1602,Buildings,"Hollow Blocks 6""",0
+1603,Office,Whiteboard Marker,0
+1604,Custodial,Detergent Powder 1kg,0
+1605,Electrical,Fluorescent Tube 40W,0
+1606,Office,Printer Ink Black,0
+1607,Buildings,Cement Bag 40kg,0
+1608,Electrical,Flat Cord #16,1
+1609,Motorpool,Automotive Belt A-60,0
+1610,Landscaping,Garden Soil 5kg,0
+1611,Office,Whiteboard Marker,0
+1612,Plumbing,"GI Elbow 1""",0
+1613,Motorpool,Diesel Engine Oil SAE 40,0
+1614,Custodial,Detergent Powder 1kg,0
+1615,Motorpool,Diesel Engine Oil SAE 40,0
+1616,Buildings,Roofing Nails,0
+1617,Motorpool,Brake Fluid DOT3,0
+1618,Motorpool,Brake Fluid DOT3,0
+1619,Plumbing,"GI Elbow 1""",0
+1620,Office,Stapler No.35,0
+1621,Plumbing,"GI Elbow 1""",0
+1622,Refrigeration,Copper Tube 3/8,0
+1623,Grounds,Grass Cutter Blade,0
+1624,Custodial,Disinfectant 1L,0
+1625,Motorpool,Oil Filter DC518,0
+1626,Refrigeration,Filter Drier 1/4,0
+1627,Electrical,Fluorescent Tube 40W,0
+1628,Motorpool,Oil Filter DC518,0
+1629,Custodial,Disinfectant 1L,0
+1630,Plumbing,"GI Elbow 1""",0
+1631,Custodial,Trash Bag XL,0
+1632,Custodial,Disinfectant 1L,0
+1633,Buildings,Roofing Nails,0
+1634,Refrigeration,IC Relay 1/8,0
+1635,Grounds,Garden Hoe,0
+1636,Electrical,Fluorescent Tube 40W,0
+1637,Electrical,Fluorescent Tube 40W,0
+1638,Office,Printer Ink Black,0
+1639,Grounds,Shovel,0
+1640,Buildings,Cement Bag 40kg,0
+1641,Custodial,Floor Wax 500ml,0
+1642,Electrical,Ballast 20W,0
+1643,Plumbing,"GI Elbow 1""",0
+1644,Plumbing,PVC Pipe 1/2,0
+1645,Landscaping,Garden Soil 5kg,0
+1646,Refrigeration,IC Relay 1/8,0
+1647,Refrigeration,Copper Tube 3/8,0
+1648,Custodial,Disinfectant 1L,0
+1649,Plumbing,PVC Pipe 1/2,0
+1650,Custodial,Disinfectant 1L,0
+1651,Buildings,Cement Bag 40kg,0
+1652,Refrigeration,Refrigerant R-22,0
+1653,Electrical,"PVC Pipe 1""",0
+1654,Refrigeration,Refrigerant R-22,0
+1655,Refrigeration,Refrigerant R-22,0
+1656,Custodial,Floor Wax 500ml,0
+1657,Grounds,Shovel,0
+1658,Grounds,Fertilizer 10kg,0
+1659,Office,Whiteboard Marker,0
+1660,Landscaping,Garden Soil 5kg,0
+1661,Refrigeration,Filter Drier 1/4,0
+1662,Buildings,Paint White 1L,0
+1663,Custodial,Disinfectant 1L,0
+1664,Grounds,Fertilizer 10kg,0
+1665,Landscaping,Decorative Lights,0
+1666,Custodial,Floor Wax 500ml,0
+1667,Grounds,Shovel,0
+1668,Landscaping,Garden Soil 5kg,0
+1669,Office,Bond Paper A4,0
+1670,Grounds,Shovel,0
+1671,Landscaping,Ornamental Plant Pot,0
+1672,Grounds,Garden Hoe,0
+1673,Grounds,Shovel,0
+1674,Electrical,Ballast 20W,0
+1675,Grounds,Fertilizer 10kg,0
+1676,Electrical,Flat Cord #16,0
+1677,Buildings,Cement Bag 40kg,0
+1678,Custodial,Detergent Powder 1kg,0
+1679,Office,Whiteboard Marker,0
+1680,Refrigeration,IC Relay 1/8,0
+1681,Buildings,Roofing Nails,0
+1682,Landscaping,Ornamental Plant Pot,0
+1683,Refrigeration,Copper Tube 3/8,1
+1684,Motorpool,Diesel Engine Oil SAE 40,0
+1685,Custodial,Trash Bag XL,0
+1686,Custodial,Floor Wax 500ml,0
+1687,Plumbing,"GI Elbow 1""",0
+1688,Grounds,Grass Cutter Blade,0
+1689,Buildings,Roofing Nails,0
+1690,Plumbing,Water Pump Motor,0
+1691,Grounds,Garden Hoe,0
+1692,Landscaping,Ornamental Plant Pot,0
+1693,Plumbing,PVC Pipe 1/2,0
+1694,Electrical,"PVC Pipe 1""",0
+1695,Motorpool,Diesel Engine Oil SAE 40,0
+1696,Plumbing,"GI Elbow 1""",0
+1697,Refrigeration,IC Relay 1/8,0
+1698,Buildings,Roofing Nails,0
+1699,Refrigeration,Copper Tube 3/8,1
+1700,Custodial,Disinfectant 1L,0
+1701,Office,Bond Paper A4,0
+1702,Buildings,Cement Bag 40kg,0
+1703,Plumbing,"GI Elbow 1""",0
+1704,Buildings,Roofing Nails,0
+1705,Grounds,Garden Hoe,0
+1706,Plumbing,PVC Pipe 1/2,0
+1707,Electrical,"PVC Pipe 1""",0
+1708,Plumbing,Pipe Sealant,0
+1709,Grounds,Grass Cutter Blade,0
+1710,Grounds,Shovel,0
+1711,Office,Printer Ink Black,0
+1712,Office,Whiteboard Marker,0
+1713,Custodial,Disinfectant 1L,0
+1714,Plumbing,Water Pump Motor,0
+1715,Grounds,Fertilizer 10kg,0
+1716,Landscaping,Decorative Lights,0
+1717,Electrical,"PVC Pipe 1""",0
+1718,Custodial,Detergent Powder 1kg,0
+1719,Refrigeration,Filter Drier 1/4,1
+1720,Custodial,Floor Wax 500ml,0
+1721,Grounds,Garden Hoe,0
+1722,Electrical,Fluorescent Tube 40W,0
+1723,Refrigeration,Copper Tube 3/8,0
+1724,Motorpool,Automotive Belt A-60,0
+1725,Landscaping,Decorative Lights,0
+1726,Office,Stapler No.35,0
+1727,Refrigeration,Filter Drier 1/4,0
+1728,Electrical,Fluorescent Tube 40W,0
+1729,Plumbing,PVC Pipe 1/2,0
+1730,Motorpool,Brake Fluid DOT3,0
+1731,Landscaping,Decorative Lights,0
+1732,Buildings,Paint White 1L,0
+1733,Office,Bond Paper A4,0
+1734,Electrical,"PVC Pipe 1""",0
+1735,Electrical,Flat Cord #16,0
+1736,Buildings,"Hollow Blocks 6""",0
+1737,Plumbing,Water Pump Motor,0
+1738,Custodial,Floor Wax 500ml,0
+1739,Landscaping,Seed Pack,0
+1740,Landscaping,Ornamental Plant Pot,0
+1741,Motorpool,Diesel Engine Oil SAE 40,0
+1742,Custodial,Disinfectant 1L,0
+1743,Grounds,Shovel,0
+1744,Plumbing,"GI Elbow 1""",0
+1745,Grounds,Shovel,0
+1746,Grounds,Garden Hoe,0
+1747,Motorpool,Brake Fluid DOT3,0
+1748,Custodial,Floor Wax 500ml,0
+1749,Refrigeration,Filter Drier 1/4,0
+1750,Electrical,Fluorescent Tube 40W,0
+1751,Motorpool,Automotive Belt A-60,1
+1752,Plumbing,Pipe Sealant,0
+1753,Grounds,Fertilizer 10kg,0
+1754,Landscaping,Garden Soil 5kg,0
+1755,Grounds,Grass Cutter Blade,0
+1756,Grounds,Shovel,0
+1757,Grounds,Fertilizer 10kg,0
+1758,Electrical,Flat Cord #16,0
+1759,Refrigeration,IC Relay 1/8,0
+1760,Electrical,Flat Cord #16,0
+1761,Electrical,Fluorescent Tube 40W,0
+1762,Custodial,Disinfectant 1L,0
+1763,Custodial,Floor Wax 500ml,0
+1764,Office,Printer Ink Black,0
+1765,Buildings,"Hollow Blocks 6""",0
+1766,Motorpool,Brake Fluid DOT3,0
+1767,Custodial,Trash Bag XL,0
+1768,Grounds,Garden Hoe,0
+1769,Electrical,"PVC Pipe 1""",0
+1770,Custodial,Trash Bag XL,0
+1771,Plumbing,Pipe Sealant,1
+1772,Custodial,Detergent Powder 1kg,0
+1773,Electrical,Ballast 20W,0
+1774,Landscaping,Ornamental Plant Pot,0
+1775,Office,Printer Ink Black,0
+1776,Refrigeration,Filter Drier 1/4,0
+1777,Custodial,Trash Bag XL,0
+1778,Buildings,Roofing Nails,0
+1779,Landscaping,Ornamental Plant Pot,0
+1780,Custodial,Trash Bag XL,0
+1781,Electrical,Fluorescent Tube 40W,0
+1782,Plumbing,PVC Pipe 1/2,0
+1783,Office,Bond Paper A4,0
+1784,Buildings,"Hollow Blocks 6""",0
+1785,Office,Printer Ink Black,0
+1786,Landscaping,Decorative Lights,0
+1787,Electrical,"PVC Pipe 1""",0
+1788,Electrical,"PVC Pipe 1""",0
+1789,Grounds,Fertilizer 10kg,0
+1790,Office,Stapler No.35,0
+1791,Custodial,Detergent Powder 1kg,0
+1792,Refrigeration,Refrigerant R-22,0
+1793,Motorpool,Oil Filter DC518,0
+1794,Grounds,Grass Cutter Blade,0
+1795,Electrical,Fluorescent Tube 40W,0
+1796,Refrigeration,Refrigerant R-22,0
+1797,Plumbing,PVC Pipe 1/2,1
+1798,Office,Whiteboard Marker,0
+1799,Refrigeration,IC Relay 1/8,0
+1800,Refrigeration,IC Relay 1/8,0
+1801,Motorpool,Oil Filter DC518,0
+1802,Buildings,Cement Bag 40kg,0
+1803,Office,Whiteboard Marker,0
+1804,Landscaping,Decorative Lights,0
+1805,Buildings,Cement Bag 40kg,0
+1806,Motorpool,Automotive Belt A-60,0
+1807,Office,Whiteboard Marker,0
+1808,Motorpool,Diesel Engine Oil SAE 40,0
+1809,Grounds,Grass Cutter Blade,0
+1810,Plumbing,PVC Pipe 1/2,1
+1811,Electrical,Ballast 20W,0
+1812,Custodial,Detergent Powder 1kg,0
+1813,Custodial,Trash Bag XL,0
+1814,Grounds,Grass Cutter Blade,0
+1815,Landscaping,Ornamental Plant Pot,0
+1816,Custodial,Disinfectant 1L,0
+1817,Plumbing,PVC Pipe 1/2,0
+1818,Office,Stapler No.35,0
+1819,Grounds,Grass Cutter Blade,0
+1820,Plumbing,Water Pump Motor,1
+1821,Office,Stapler No.35,0
+1822,Electrical,"PVC Pipe 1""",0
+1823,Landscaping,Garden Soil 5kg,0
+1824,Buildings,"Hollow Blocks 6""",0
+1825,Buildings,Cement Bag 40kg,0
+1826,Office,Whiteboard Marker,0
+1827,Plumbing,Pipe Sealant,0
+1828,Motorpool,Automotive Belt A-60,0
+1829,Electrical,Fluorescent Tube 40W,0
+1830,Custodial,Disinfectant 1L,0
+1831,Custodial,Disinfectant 1L,0
+1832,Custodial,Floor Wax 500ml,0
+1833,Electrical,"PVC Pipe 1""",0
+1834,Electrical,"PVC Pipe 1""",0
+1835,Motorpool,Automotive Belt A-60,0
+1836,Office,Bond Paper A4,0
+1837,Buildings,"Hollow Blocks 6""",0
+1838,Motorpool,Diesel Engine Oil SAE 40,0
+1839,Refrigeration,Filter Drier 1/4,0
+1840,Electrical,"PVC Pipe 1""",0
+1841,Custodial,Detergent Powder 1kg,0
+1842,Refrigeration,Copper Tube 3/8,0
+1843,Electrical,Fluorescent Tube 40W,0
+1844,Refrigeration,Copper Tube 3/8,0
+1845,Landscaping,Decorative Lights,0
+1846,Custodial,Detergent Powder 1kg,0
+1847,Custodial,Disinfectant 1L,0
+1848,Plumbing,"GI Elbow 1""",0
+1849,Buildings,Paint White 1L,0
+1850,Plumbing,PVC Pipe 1/2,0
+1851,Refrigeration,Refrigerant R-22,0
+1852,Plumbing,Pipe Sealant,0
+1853,Grounds,Garden Hoe,0
+1854,Landscaping,Garden Soil 5kg,0
+1855,Office,Printer Ink Black,0
+1856,Grounds,Garden Hoe,0
+1857,Grounds,Shovel,0
+1858,Grounds,Shovel,0
+1859,Buildings,Roofing Nails,0
+1860,Refrigeration,Copper Tube 3/8,0
+1861,Grounds,Grass Cutter Blade,0
+1862,Motorpool,Oil Filter DC518,0
+1863,Refrigeration,Refrigerant R-22,0
+1864,Landscaping,Decorative Lights,0
+1865,Motorpool,Brake Fluid DOT3,0
+1866,Motorpool,Diesel Engine Oil SAE 40,0
+1867,Office,Printer Ink Black,0
+1868,Office,Stapler No.35,0
+1869,Grounds,Garden Hoe,0
+1870,Buildings,Cement Bag 40kg,0
+1871,Motorpool,Automotive Belt A-60,0
+1872,Motorpool,Brake Fluid DOT3,0
+1873,Landscaping,Garden Soil 5kg,0
+1874,Landscaping,Ornamental Plant Pot,0
+1875,Custodial,Disinfectant 1L,0
+1876,Landscaping,Decorative Lights,0
+1877,Electrical,Fluorescent Tube 40W,0
+1878,Refrigeration,Filter Drier 1/4,0
+1879,Buildings,Roofing Nails,0
+1880,Plumbing,Water Pump Motor,0
+1881,Grounds,Garden Hoe,0
+1882,Buildings,Paint White 1L,0
+1883,Motorpool,Diesel Engine Oil SAE 40,0
+1884,Plumbing,"GI Elbow 1""",0
+1885,Grounds,Fertilizer 10kg,0
+1886,Office,Stapler No.35,0
+1887,Electrical,Fluorescent Tube 40W,0
+1888,Landscaping,Seed Pack,0
+1889,Motorpool,Oil Filter DC518,0
+1890,Motorpool,Diesel Engine Oil SAE 40,0
+1891,Refrigeration,IC Relay 1/8,0
+1892,Motorpool,Diesel Engine Oil SAE 40,0
+1893,Grounds,Garden Hoe,0
+1894,Electrical,Flat Cord #16,0
+1895,Plumbing,Pipe Sealant,0
+1896,Landscaping,Garden Soil 5kg,0
+1897,Motorpool,Oil Filter DC518,0
+1898,Grounds,Fertilizer 10kg,0
+1899,Electrical,Ballast 20W,0
+1900,Refrigeration,Filter Drier 1/4,0
+1901,Motorpool,Diesel Engine Oil SAE 40,0
+1902,Motorpool,Diesel Engine Oil SAE 40,0
+1903,Buildings,Cement Bag 40kg,0
+1904,Electrical,Fluorescent Tube 40W,0
+1905,Grounds,Fertilizer 10kg,0
+1906,Plumbing,Water Pump Motor,0
+1907,Grounds,Garden Hoe,0
+1908,Refrigeration,Copper Tube 3/8,0
+1909,Motorpool,Oil Filter DC518,0
+1910,Plumbing,"GI Elbow 1""",0
+1911,Refrigeration,Filter Drier 1/4,0
+1912,Office,Printer Ink Black,0
+1913,Plumbing,PVC Pipe 1/2,0
+1914,Custodial,Detergent Powder 1kg,0
+1915,Landscaping,Garden Soil 5kg,0
+1916,Refrigeration,Copper Tube 3/8,0
+1917,Refrigeration,Refrigerant R-22,0
+1918,Landscaping,Decorative Lights,0
+1919,Buildings,"Hollow Blocks 6""",0
+1920,Landscaping,Seed Pack,0
+1921,Office,Bond Paper A4,0
+1922,Buildings,Roofing Nails,0
+1923,Custodial,Disinfectant 1L,0
+1924,Office,Bond Paper A4,0
+1925,Buildings,"Hollow Blocks 6""",0
+1926,Motorpool,Oil Filter DC518,0
+1927,Refrigeration,Filter Drier 1/4,0
+1928,Grounds,Fertilizer 10kg,0
+1929,Refrigeration,Refrigerant R-22,0
+1930,Custodial,Trash Bag XL,0
+1931,Custodial,Floor Wax 500ml,0
+1932,Office,Whiteboard Marker,0
+1933,Grounds,Fertilizer 10kg,0
+1934,Motorpool,Brake Fluid DOT3,0
+1935,Grounds,Shovel,0
+1936,Landscaping,Seed Pack,0
+1937,Motorpool,Oil Filter DC518,1
+1938,Landscaping,Seed Pack,0
+1939,Plumbing,"GI Elbow 1""",0
+1940,Motorpool,Automotive Belt A-60,0
+1941,Office,Printer Ink Black,0
+1942,Custodial,Disinfectant 1L,0
+1943,Buildings,Paint White 1L,1
+1944,Custodial,Trash Bag XL,0
+1945,Plumbing,Water Pump Motor,0
+1946,Custodial,Detergent Powder 1kg,0
+1947,Custodial,Detergent Powder 1kg,0
+1948,Buildings,Roofing Nails,0
+1949,Plumbing,PVC Pipe 1/2,0
+1950,Custodial,Floor Wax 500ml,0
+1951,Landscaping,Ornamental Plant Pot,0
+1952,Office,Stapler No.35,0
+1953,Buildings,Roofing Nails,0
+1954,Electrical,Flat Cord #16,0
+1955,Grounds,Fertilizer 10kg,0
+1956,Custodial,Disinfectant 1L,0
+1957,Buildings,"Hollow Blocks 6""",0
+1958,Electrical,Flat Cord #16,0
+1959,Motorpool,Brake Fluid DOT3,0
+1960,Buildings,"Hollow Blocks 6""",0
+1961,Plumbing,PVC Pipe 1/2,0
+1962,Landscaping,Ornamental Plant Pot,0
+1963,Office,Printer Ink Black,0
+1964,Buildings,Cement Bag 40kg,0
+1965,Motorpool,Oil Filter DC518,0
+1966,Office,Whiteboard Marker,0
+1967,Grounds,Garden Hoe,0
+1968,Motorpool,Automotive Belt A-60,0
+1969,Custodial,Trash Bag XL,0
+1970,Buildings,Paint White 1L,0
+1971,Landscaping,Seed Pack,0
+1972,Office,Whiteboard Marker,0
+1973,Refrigeration,Refrigerant R-22,0
+1974,Landscaping,Garden Soil 5kg,0
+1975,Landscaping,Seed Pack,0
+1976,Landscaping,Decorative Lights,0
+1977,Electrical,Fluorescent Tube 40W,0
+1978,Refrigeration,Filter Drier 1/4,0
+1979,Motorpool,Diesel Engine Oil SAE 40,0
+1980,Electrical,Ballast 20W,0
+1981,Motorpool,Oil Filter DC518,0
+1982,Grounds,Garden Hoe,0
+1983,Custodial,Trash Bag XL,1
+1984,Plumbing,Pipe Sealant,0
+1985,Office,Whiteboard Marker,0
+1986,Electrical,Ballast 20W,0
+1987,Motorpool,Oil Filter DC518,0
+1988,Custodial,Trash Bag XL,0
+1989,Refrigeration,Copper Tube 3/8,0
+1990,Landscaping,Ornamental Plant Pot,0
+1991,Electrical,Flat Cord #16,0
+1992,Refrigeration,IC Relay 1/8,0
+1993,Office,Bond Paper A4,1
+1994,Office,Bond Paper A4,0
+1995,Plumbing,PVC Pipe 1/2,0
+1996,Motorpool,Brake Fluid DOT3,0
+1997,Refrigeration,IC Relay 1/8,0
+1998,Grounds,Grass Cutter Blade,1
+1999,Buildings,Paint White 1L,0
+2000,Refrigeration,Refrigerant R-22,0
+2001,Custodial,Floor Wax 500ml,0
+2002,Electrical,"PVC Pipe 1""",0
+2003,Plumbing,Pipe Sealant,0
+2004,Plumbing,PVC Pipe 1/2,1
+2005,Refrigeration,IC Relay 1/8,0
+2006,Custodial,Trash Bag XL,0
+2007,Motorpool,Diesel Engine Oil SAE 40,0
+2008,Buildings,Roofing Nails,0
+2009,Motorpool,Diesel Engine Oil SAE 40,0
+2010,Motorpool,Oil Filter DC518,0
+2011,Landscaping,Seed Pack,0
+2012,Office,Whiteboard Marker,0
+2013,Refrigeration,Copper Tube 3/8,0
+2014,Buildings,Paint White 1L,0
+2015,Grounds,Shovel,0
+2016,Plumbing,Pipe Sealant,0
+2017,Landscaping,Garden Soil 5kg,0
+2018,Landscaping,Seed Pack,0
+2019,Motorpool,Diesel Engine Oil SAE 40,0
+2020,Custodial,Trash Bag XL,0
+2021,Landscaping,Decorative Lights,0
+2022,Plumbing,Pipe Sealant,0
+2023,Grounds,Fertilizer 10kg,0
+2024,Motorpool,Diesel Engine Oil SAE 40,0
+2025,Refrigeration,Filter Drier 1/4,1
+2026,Landscaping,Seed Pack,0
+2027,Electrical,Fluorescent Tube 40W,0
+2028,Grounds,Fertilizer 10kg,0
+2029,Electrical,Fluorescent Tube 40W,0
+2030,Electrical,"PVC Pipe 1""",0
+2031,Custodial,Disinfectant 1L,0
+2032,Electrical,Fluorescent Tube 40W,0
+2033,Buildings,Cement Bag 40kg,0
+2034,Plumbing,"GI Elbow 1""",0
+2035,Office,Bond Paper A4,1
+2036,Motorpool,Automotive Belt A-60,0
+2037,Electrical,Fluorescent Tube 40W,0
+2038,Motorpool,Automotive Belt A-60,0
+2039,Grounds,Grass Cutter Blade,0
+2040,Custodial,Floor Wax 500ml,0
+2041,Electrical,Fluorescent Tube 40W,0
+2042,Grounds,Fertilizer 10kg,0
+2043,Landscaping,Ornamental Plant Pot,0
+2044,Electrical,"PVC Pipe 1""",0
+2045,Plumbing,"GI Elbow 1""",0
+2046,Custodial,Disinfectant 1L,0
+2047,Landscaping,Garden Soil 5kg,0
+2048,Office,Whiteboard Marker,0
+2049,Plumbing,Pipe Sealant,0
+2050,Plumbing,Water Pump Motor,0
+2051,Motorpool,Automotive Belt A-60,0
+2052,Electrical,Flat Cord #16,0
+2053,Motorpool,Diesel Engine Oil SAE 40,0
+2054,Refrigeration,IC Relay 1/8,0
+2055,Buildings,"Hollow Blocks 6""",0
+2056,Plumbing,Pipe Sealant,0
+2057,Motorpool,Diesel Engine Oil SAE 40,0
+2058,Motorpool,Diesel Engine Oil SAE 40,0
+2059,Landscaping,Decorative Lights,0
+2060,Office,Whiteboard Marker,0
+2061,Plumbing,Water Pump Motor,0
+2062,Motorpool,Brake Fluid DOT3,0
+2063,Motorpool,Oil Filter DC518,0
+2064,Landscaping,Garden Soil 5kg,0
+2065,Buildings,Cement Bag 40kg,0
+2066,Buildings,Paint White 1L,0
+2067,Motorpool,Oil Filter DC518,0
+2068,Plumbing,"GI Elbow 1""",0
+2069,Office,Stapler No.35,0
+2070,Grounds,Shovel,0
+2071,Motorpool,Automotive Belt A-60,0
+2072,Motorpool,Oil Filter DC518,0
+2073,Refrigeration,Refrigerant R-22,1
+2074,Plumbing,Water Pump Motor,0
+2075,Office,Stapler No.35,0
+2076,Office,Printer Ink Black,0
+2077,Office,Stapler No.35,0
+2078,Motorpool,Automotive Belt A-60,0
+2079,Buildings,Roofing Nails,0
+2080,Custodial,Floor Wax 500ml,0
+2081,Office,Whiteboard Marker,0
+2082,Refrigeration,Copper Tube 3/8,0
+2083,Motorpool,Brake Fluid DOT3,0
+2084,Custodial,Trash Bag XL,0
+2085,Plumbing,Pipe Sealant,0
+2086,Custodial,Trash Bag XL,0
+2087,Motorpool,Automotive Belt A-60,0
+2088,Plumbing,Pipe Sealant,0
+2089,Office,Printer Ink Black,0
+2090,Grounds,Fertilizer 10kg,0
+2091,Refrigeration,Filter Drier 1/4,0
+2092,Motorpool,Brake Fluid DOT3,0
+2093,Custodial,Disinfectant 1L,0
+2094,Grounds,Shovel,0
+2095,Office,Printer Ink Black,0
+2096,Office,Stapler No.35,0
+2097,Buildings,"Hollow Blocks 6""",0
+2098,Landscaping,Seed Pack,0
+2099,Landscaping,Garden Soil 5kg,0
+2100,Motorpool,Brake Fluid DOT3,0
+2101,Motorpool,Diesel Engine Oil SAE 40,0
+2102,Grounds,Grass Cutter Blade,0
+2103,Buildings,Cement Bag 40kg,0
+2104,Refrigeration,Copper Tube 3/8,0
+2105,Office,Printer Ink Black,0
+2106,Refrigeration,IC Relay 1/8,0
+2107,Electrical,Ballast 20W,0
+2108,Office,Whiteboard Marker,0
+2109,Grounds,Grass Cutter Blade,0
+2110,Landscaping,Seed Pack,1
+2111,Motorpool,Brake Fluid DOT3,0
+2112,Electrical,Ballast 20W,0
+2113,Refrigeration,Copper Tube 3/8,0
+2114,Motorpool,Automotive Belt A-60,0
+2115,Custodial,Disinfectant 1L,0
+2116,Electrical,Ballast 20W,0
+2117,Motorpool,Automotive Belt A-60,0
+2118,Refrigeration,Refrigerant R-22,0
+2119,Refrigeration,Refrigerant R-22,0
+2120,Motorpool,Diesel Engine Oil SAE 40,0
+2121,Office,Whiteboard Marker,0
+2122,Refrigeration,Filter Drier 1/4,0
+2123,Plumbing,Pipe Sealant,0
+2124,Electrical,Ballast 20W,0
+2125,Refrigeration,Refrigerant R-22,1
+2126,Custodial,Disinfectant 1L,0
+2127,Landscaping,Garden Soil 5kg,0
+2128,Custodial,Floor Wax 500ml,0
+2129,Office,Stapler No.35,0
+2130,Custodial,Trash Bag XL,0
+2131,Electrical,Ballast 20W,0
+2132,Motorpool,Brake Fluid DOT3,0
+2133,Office,Stapler No.35,0
+2134,Office,Bond Paper A4,0
+2135,Landscaping,Ornamental Plant Pot,0
+2136,Motorpool,Brake Fluid DOT3,1
+2137,Grounds,Shovel,0
+2138,Buildings,"Hollow Blocks 6""",0
+2139,Plumbing,"GI Elbow 1""",1
+2140,Motorpool,Diesel Engine Oil SAE 40,0
+2141,Plumbing,"GI Elbow 1""",0
+2142,Motorpool,Diesel Engine Oil SAE 40,0
+2143,Office,Bond Paper A4,0
+2144,Electrical,Fluorescent Tube 40W,0
+2145,Landscaping,Decorative Lights,0
+2146,Custodial,Detergent Powder 1kg,0
+2147,Buildings,"Hollow Blocks 6""",0
+2148,Refrigeration,Copper Tube 3/8,0
+2149,Plumbing,PVC Pipe 1/2,0
+2150,Refrigeration,Filter Drier 1/4,0
+2151,Buildings,Paint White 1L,0
+2152,Landscaping,Garden Soil 5kg,0
+2153,Motorpool,Brake Fluid DOT3,0
+2154,Plumbing,Pipe Sealant,0
+2155,Office,Whiteboard Marker,0
+2156,Refrigeration,Copper Tube 3/8,0
+2157,Plumbing,Water Pump Motor,0
+2158,Motorpool,Automotive Belt A-60,0
+2159,Refrigeration,IC Relay 1/8,0
+2160,Electrical,Ballast 20W,0
