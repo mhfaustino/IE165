@@ -9,7 +9,6 @@ import plotly.graph_objects as go
 
 dash.register_page(__name__, path="/inventory", name="Inventory Dashboard")
 
-# ---------------- HEADER ---------------- #
 header = dbc.Navbar(
     dbc.Container([
         dbc.NavbarBrand(
@@ -29,11 +28,9 @@ header = dbc.Navbar(
     className="mb-4"
 )
 
-# --- Metric Queries --- #
 def get_inventory_metrics(year=None, category=None):
     conn = get_db_connection()
     params = []
-    # Unique SKUs
     sku_query = '''
         SELECT COUNT(DISTINCT i.SKU) AS total_skus
         FROM Item_Dimension i
@@ -50,7 +47,6 @@ def get_inventory_metrics(year=None, category=None):
     sku_df = pd.read_sql_query(sku_query, conn, params=params)
     total_skus = int(sku_df["total_skus"].iloc[0]) if not sku_df.empty else 0
 
-    # Total stock
     stock_query = '''
         SELECT SUM(f.StockOnHand) AS total_stock
         FROM Job_Request_Fact_Table f
@@ -68,7 +64,6 @@ def get_inventory_metrics(year=None, category=None):
     stock_df = pd.read_sql_query(stock_query, conn, params=stock_params)
     total_stock = int(stock_df["total_stock"].iloc[0]) if not stock_df.empty and pd.notnull(stock_df["total_stock"].iloc[0]) else 0
 
-    # Total stockouts
     stockout_query = '''
         SELECT COUNT(*) AS total_stockouts
         FROM Job_Request_Fact_Table f
@@ -86,7 +81,6 @@ def get_inventory_metrics(year=None, category=None):
     stockout_df = pd.read_sql_query(stockout_query, conn, params=stockout_params)
     total_stockouts = int(stockout_df["total_stockouts"].iloc[0]) if not stockout_df.empty else 0
 
-    # Total obsoletes
     obsolete_query = '''
         SELECT COUNT(DISTINCT i.SKU) AS total_obsoletes
         FROM Item_Dimension i
@@ -107,7 +101,6 @@ def get_inventory_metrics(year=None, category=None):
     conn.close()
     return total_skus, total_stock, total_stockouts, total_obsoletes
 
-# SQL query for inventory failure frequency
 SQL_QUERY = '''
 SELECT
     i.ItemKey,
@@ -142,7 +135,6 @@ def get_forecasted_demand_data(year=None, category=None):
     conn = get_db_connection()
     params = []
     if category:
-        # Top 4 per selected category
         query = '''
         WITH ForecastedDemand AS (
             SELECT
@@ -178,7 +170,6 @@ def get_forecasted_demand_data(year=None, category=None):
         ORDER BY OverallRank
         '''
     else:
-        # Top 5 overall
         query = '''
         WITH ForecastedDemand AS (
             SELECT
@@ -294,7 +285,7 @@ layout = html.Div([
         ], className="mb-2", style={"paddingTop": "32px"}),
         dbc.Card(
             dbc.CardBody([
-                html.P("View and analyze inventory...", className="text-muted"),
+                html.H4("Inventory", className="mt-4"),
                 dbc.Row([
                     dbc.Col([
                         html.Label("Filter by Year"),
@@ -355,55 +346,74 @@ layout = html.Div([
                 html.Hr(),
                 dbc.Row([
                     dbc.Col([
-                        html.H4("Inventory Overstocking or Obselescence Frequency", className="mt-4"),
-                        dcc.Graph(id="inventory-bar-chart", figure=bar_fig, style={"height": "400px"})
+                        dbc.Card([
+                            dbc.CardBody([
+                                html.H4("Inventory Overstocking or Obselescence Frequency", className="mt-4"),
+                                dcc.Graph(id="inventory-bar-chart", figure=bar_fig, style={"height": "400px"})
+                            ])
+                        ], style={"border": "3px solid #eaeaea", "boxShadow": "0 2px 8px rgba(0,0,0,0.04)"}),
                     ], md=6),
                     dbc.Col([
-                        html.H4("Forecasted Demand", className="mt-4"),
-                        dcc.Graph(id="forecasted-demand-chart", figure=forecast_fig, style={"height": "400px"})
+                        dbc.Card([
+                            dbc.CardBody([
+                                html.H4("Forecasted Demand", className="mt-4"),
+                                dcc.Graph(id="forecasted-demand-chart", figure=forecast_fig, style={"height": "400px"})
+                            ])
+                        ], style={"border": "3px solid #eaeaea", "boxShadow": "0 2px 8px rgba(0,0,0,0.04)"}),
                     ], md=6),
                 ]),
                 html.Hr(),
                 dbc.Row([
                     dbc.Col([
-                        html.H4("Total Stock per Month & Obsolete vs Active Items", className="mt-4"),
-                        dbc.Row([
-                            dbc.Col([
-                                html.Label("Year"),
-                                dcc.Dropdown(
-                                    id="chart-year-dropdown",
-                                    options=[{"label": x, "value": x} for x in [2019, 2020, 2021, 2022, 2023]],
-                                    value=2023,
-                                    multi=False,
-                                    style={"marginBottom": "8px"}
-                                ),
-                            ], md=6),
-                            dbc.Col([
-                                html.Label("Category"),
-                                dcc.Dropdown(
-                                    id="chart-category-dropdown",
-                                    options=[{"label": x, "value": x.lower()} for x in ["Buildings", "Custodial", "Electrical", "Grounds", "Landscaping", "Motorpool", "Office", "Plumbing", "Refrigeration"]],
-                                    value="buildings",
-                                    multi=False,
-                                    style={"marginBottom": "8px"}
-                                ),
-                            ], md=6),
-                        ], className="mb-3"),
-                        dbc.Row([
-                            dbc.Col([
-                                dcc.Graph(id="stock-line-chart", style={"height": "400px"})
-                            ], md=6),
-                            dbc.Col([
-                                dcc.Graph(id="obsolete-pie-chart", style={"height": "400px"})
-                            ], md=6),
-                        ])
+                        dbc.Card([
+                            dbc.CardBody([
+                                html.H4("Total Stock per Month & Obsolete vs Active Items", className="mt-4"),
+                                dbc.Row([
+                                    dbc.Col([
+                                        html.Label("Year"),
+                                        dcc.Dropdown(
+                                            id="chart-year-dropdown",
+                                            options=[{"label": x, "value": x} for x in [2019, 2020, 2021, 2022, 2023]],
+                                            value=2023,
+                                            multi=False,
+                                            style={"marginBottom": "8px"}
+                                        ),
+                                    ], md=6),
+                                    dbc.Col([
+                                        html.Label("Category"),
+                                        dcc.Dropdown(
+                                            id="chart-category-dropdown",
+                                            options=[{"label": x, "value": x.lower()} for x in ["Buildings", "Custodial", "Electrical", "Grounds", "Landscaping", "Motorpool", "Office", "Plumbing", "Refrigeration"]],
+                                            value="buildings",
+                                            multi=False,
+                                            style={"marginBottom": "8px"}
+                                        ),
+                                    ], md=6),
+                                ], className="mb-3"),
+                                dbc.Row([
+                                    dbc.Col([
+                                        dbc.Card([
+                                            dbc.CardBody([
+                                                dcc.Graph(id="stock-line-chart", style={"height": "400px"})
+                                            ])
+                                        ], style={"border": "3px solid #eaeaea", "boxShadow": "0 2px 8px rgba(0,0,0,0.04)"}),
+                                    ], md=6),
+                                    dbc.Col([
+                                        dbc.Card([
+                                            dbc.CardBody([
+                                                dcc.Graph(id="obsolete-pie-chart", style={"height": "400px"})
+                                            ])
+                                        ], style={"border": "3px solid #eaeaea", "boxShadow": "0 2px 8px rgba(0,0,0,0.04)"}),
+                                    ], md=6),
+                                ])
+                            ])
+                        ], style={"border": "3px solid #eaeaea", "boxShadow": "0 2px 8px rgba(0,0,0,0.04)"}),
                     ], width=12),
                 ])
             ])
         )
     ], fluid=True, style={"paddingLeft": "32px", "paddingRight": "32px", "backgroundColor": "#eaeaea"})
     ], style={"backgroundColor": "#eaeaea", "minHeight": "100vh"})
-# Callback for new charts
 @callback(
     Output("stock-line-chart", "figure"),
     Output("obsolete-pie-chart", "figure"),
@@ -429,7 +439,6 @@ def update_line_and_pie_chart(chart_year, chart_category):
     all_months_df = pd.DataFrame({"Month": range(1,13), "MonthName": months})
     line_df = pd.merge(all_months_df, line_df, on=["Month", "MonthName"], how="left").fillna({"total_stock": 0})
     line_fig = px.line(line_df, x="MonthName", y="total_stock", title=f"Total Stock per Month in {year_val} ({cat_val.title()})", markers=True, labels={"total_stock": "Total Stock", "MonthName": "Month"})
-    # Pie chart: obsolete vs active
     pie_query = '''
         SELECT i.ObsoleteFlag, COUNT(DISTINCT i.SKU) AS count
         FROM Item_Dimension i
@@ -457,7 +466,6 @@ def update_line_and_pie_chart(chart_year, chart_category):
     [Input("year-dropdown", "value"), Input("category-dropdown", "value")]
 )
 def update_charts(selected_year, selected_category):
-    # ...existing code...
     year_options = [2019, 2020, 2021, 2022, 2023]
     year = selected_year if isinstance(selected_year, list) else [selected_year]
     category = selected_category if isinstance(selected_category, list) else [selected_category]
@@ -508,7 +516,6 @@ def update_charts(selected_year, selected_category):
     fig_forecast.update_yaxes(type='category')
     return fig_failure, fig_forecast
 
-# Callback for metrics
 @callback(
     Output("metric-total-skus", "children"),
     Output("metric-total-stock", "children"),

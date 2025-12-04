@@ -5,7 +5,6 @@ import dash_bootstrap_components as dbc
 
 dash.register_page(__name__, path="/about", name="About")
 
-# ---------------- HEADER ---------------- #
 header = dbc.Navbar(
     dbc.Container([
         dbc.NavbarBrand(
@@ -25,7 +24,6 @@ header = dbc.Navbar(
     className="mb-4"
 )
 
-# --------------- PROFILE CARD DATA --------------- #
 profiles = [
 	{"name": "Evangelista, Cathleen Eren", "email": "cmevangelista@up.edu.ph", "img": "/assets/profile/evangelista.jpg"},
 	{"name": "Faustino, Mikaela Jessica", "email": "mhfaustino@up.edu.ph", "img": "/assets/profile/faustino.jpg"},
@@ -33,7 +31,6 @@ profiles = [
 	{"name": "Puerto, Atasha Brianne", "email": "abpuerto@up.edu.ph", "img": "/assets/profile/puerto.jpg"},
 ]
 
-# --------------- 1x4 RECTANGULAR PROFILE CARDS GRID --------------- #
 profile_cards = dbc.Row([
 	dbc.Col(
 		dbc.Card([
@@ -50,7 +47,6 @@ profile_cards = dbc.Row([
 	) for profile in profiles
 ], justify="center", className="justify-content-center")
 
-# ---------------- PAGE LAYOUT ---------------- #
 layout = html.Div([
 	header,
 	dbc.Container([

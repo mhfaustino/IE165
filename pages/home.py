@@ -4,7 +4,6 @@ import dash_bootstrap_components as dbc
 
 dash.register_page(__name__, path="/", name="Home")
 
-# ---------------- HEADER ---------------- #
 header = dbc.Navbar(
     dbc.Container([
         dbc.NavbarBrand(
@@ -24,10 +23,12 @@ header = dbc.Navbar(
     className="mb-4"
 )
 
-# --------------- HERO SECTION --------------- #
 hero_section = html.Div(
     [
-        html.H1("Welcome to UPMO Dashboard!", className="text-white fw-bold"),
+        html.Div([
+            html.H2("UPLB University Planning and Maintenance Office", className="fw-bold mb-2", style={"color": "#8D1436", "textShadow": "0 2px 8px rgba(0,0,0,0.12)"}),
+            html.H3("Dashboard Intelligence", className="fw-bold", style={"color": "#8D1436", "textShadow": "0 2px 8px rgba(0,0,0,0.12)"}),
+        ], style={"background": "rgba(255,255,255,0.75)", "borderRadius": "12px", "display": "inline-block", "padding": "32px 48px", "boxShadow": "0 4px 24px rgba(0,0,0,0.10)"})
     ],
     style={
         "backgroundImage": "url('/assets/hero-bg.jpg')",
@@ -40,7 +41,6 @@ hero_section = html.Div(
     }
 )
 
-# --------------- CLICKABLE CARDS (2x2 GRID) --------------- #
 card_data = [
     {
         "title": "Inventory & Procurement",
@@ -85,7 +85,6 @@ cards = dbc.Row(
     ]
 )
 
-# ---------------- PAGE LAYOUT ---------------- #
 layout = html.Div([
     header,
     dbc.Container([

@@ -87,7 +87,6 @@ def get_qty_data(year=None, month=None, category=None, sku=None):
     conn.close()
     return df
 
-# ---------------- HEADER ---------------- #
 header = dbc.Navbar(
     dbc.Container([
         dbc.NavbarBrand(
@@ -176,7 +175,7 @@ layout = html.Div([
                 ], size="md"),
             ], md=6, className="d-flex align-items-center justify-content-end"),
         ], className="mb-2", style={"paddingTop": "32px"}),
-        dbc.Card(
+        dbc.Card([
             dbc.CardBody([
                 dbc.Row([
                     dbc.Col([
@@ -201,7 +200,11 @@ layout = html.Div([
                                 ),
                             ], md=6),
                         ], className="mb-4"),
-                        dcc.Graph(id="forecast-trend-chart", style={"height": "400px"})
+                        dbc.Card([
+                            dbc.CardBody([
+                                dcc.Graph(id="forecast-trend-chart", style={"height": "400px"})
+                            ])
+                        ], style={"border": "3px solid #eaeaea", "boxShadow": "0 2px 8px rgba(0,0,0,0.04)"}),
                     ], md=12),
                 ]),
                 html.Hr(),
@@ -211,12 +214,12 @@ layout = html.Div([
                         dbc.Row([
                             dbc.Col([
                                 html.Label("Year"),
-                                    dcc.Dropdown(
-                                        id="mae-year-dropdown",
-                                        options=[{"label": str(x), "value": x} for x in [2023, 2022, 2021, 2019]],
-                                        value=2023,
-                                        placeholder="Select Year"
-                                    ),
+                                dcc.Dropdown(
+                                    id="mae-year-dropdown",
+                                    options=[{"label": str(x), "value": x} for x in [2023, 2022, 2021, 2019]],
+                                    value=2023,
+                                    placeholder="Select Year"
+                                ),
                             ], md=3),
                             dbc.Col([
                                 html.Label("Month"),
@@ -252,16 +255,24 @@ layout = html.Div([
                         ], className="mb-4"),
                         dbc.Row([
                             dbc.Col([
-                                dcc.Graph(id="qty-chart", style={"height": "300px"})
+                                dbc.Card([
+                                    dbc.CardBody([
+                                        dcc.Graph(id="qty-chart", style={"height": "300px"})
+                                    ])
+                                ], style={"border": "3px solid #eaeaea", "boxShadow": "0 2px 8px rgba(0,0,0,0.04)"}),
                             ], md=6),
                             dbc.Col([
-                                dcc.Graph(id="mae-me-chart", style={"height": "300px"})
+                                dbc.Card([
+                                    dbc.CardBody([
+                                        dcc.Graph(id="mae-me-chart", style={"height": "300px"})
+                                    ])
+                                ], style={"border": "3px solid #eaeaea", "boxShadow": "0 2px 8px rgba(0,0,0,0.04)"}),
                             ], md=6),
                         ])
                     ], md=12),
                 ])
             ])
-        )
+        ])
     ], fluid=True, style={"paddingLeft": "32px", "paddingRight": "32px", "backgroundColor": "#eaeaea"})
     ], style={"backgroundColor": "#eaeaea", "minHeight": "100vh"})
 from dash import ctx
@@ -285,7 +296,6 @@ def update_sku_options(selected_category):
 def update_mae_me_chart(year, month, category, sku):
     df_error = get_mae_me_data(year, month, category, sku)
     df_qty = get_qty_data(year, month, category, sku)
-    # Error metrics chart
     df_error_long = df_error.melt(var_name="Metric", value_name="Value")
     fig_error = px.bar(
         df_error_long,
@@ -295,7 +305,6 @@ def update_mae_me_chart(year, month, category, sku):
         text="Value"
     )
     fig_error.update_layout(yaxis_title="Value", xaxis_title="Metric")
-    # Qty chart
     df_qty_long = df_qty.melt(var_name="Metric", value_name="Value")
     fig_qty = px.bar(
         df_qty_long,
@@ -313,12 +322,10 @@ def update_mae_me_chart(year, month, category, sku):
     [Input("trend-year-dropdown", "value"), Input("trend-category-dropdown", "value")]
 )
 def update_forecast_trend_chart(selected_year, selected_category):
-    # Handle 'all' year (show latest year)
     if selected_year is None:
         input_year = 2022
     else:
         input_year = int(selected_year)
-    # Handle category
     category = "Buildings" if selected_category is None or selected_category == "all" else selected_category.capitalize()
     df = get_forecast_trend_data(input_year, category=category)
     chart_df = prepare_line_chart_data(df, input_year)

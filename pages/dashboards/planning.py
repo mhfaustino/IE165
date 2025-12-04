@@ -102,7 +102,6 @@ def get_stockout_sku_pie(year=None, category=None):
     conn.close()
     return df
 
-# ---------------- HEADER ---------------- #
 header = dbc.Navbar(
     dbc.Container([
         dbc.NavbarBrand(
@@ -138,7 +137,7 @@ layout = html.Div([
                 ], size="md"),
             ], md=6, className="d-flex align-items-center justify-content-end"),
         ], className="mb-2", style={"paddingTop": "32px"}),
-        dbc.Card(
+        dbc.Card([
             dbc.CardBody([
                 html.H4("Stockout Risk by Category & SKU", className="mt-4"),
                 dbc.Row([
@@ -154,26 +153,30 @@ layout = html.Div([
                 ], className="mb-4"),
                 dbc.Row([
                     dbc.Col([
-                        dcc.Graph(id="top3-category-bar", style={"height": "400px"})
-                    ], md=12),
-                ]),
-                html.Hr(),
-                dbc.Row([
+                        dbc.Card([
+                            dbc.CardBody([
+                                dcc.Graph(id="top3-category-bar", style={"height": "600px"})
+                            ])
+                        ], style={"border": "3px solid #eaeaea", "boxShadow": "0 2px 8px rgba(0,0,0,0.04)", "height": "100%"}),
+                    ], md=7),
                     dbc.Col([
-                        html.H5(id="pie-title-1"),
-                        dcc.Graph(id="sku-pie-1", style={"height": "350px", "minHeight": "350px"})
-                    ], md=4),
-                    dbc.Col([
-                        html.H5(id="pie-title-2"),
-                        dcc.Graph(id="sku-pie-2", style={"height": "350px", "minHeight": "350px"})
-                    ], md=4),
-                    dbc.Col([
-                        html.H5(id="pie-title-3"),
-                        dcc.Graph(id="sku-pie-3", style={"height": "350px", "minHeight": "350px"})
-                    ], md=4),
+                        dbc.Card([
+                            dbc.CardBody([
+                                html.H5(id="pie-title-1", style={"marginBottom": "8px"}),
+                                dcc.Graph(id="sku-pie-1", style={"height": "260px", "minHeight": "260px", "marginBottom": "-16px"})
+                            ], style={"padding": "12px 8px 0 8px"})
+                        ], style={"borderTop": "3px solid #eaeaea", "borderRight": "3px solid #eaeaea", "borderBottom": "3px solid #eaeaea", "borderLeft": "3px solid #eaeaea", "boxShadow": "0 2px 8px rgba(0,0,0,0.04)", "marginBottom": "32px", "minHeight": "260px"}),
+                        html.Div(style={"height": "16px"}),
+                        dbc.Card([
+                            dbc.CardBody([
+                                html.H5(id="pie-title-2", style={"marginBottom": "8px"}),
+                                dcc.Graph(id="sku-pie-2", style={"height": "260px", "minHeight": "260px", "marginBottom": "-16px"})
+                            ], style={"padding": "12px 8px 0 8px"})
+                        ], style={"border": "3px solid #eaeaea", "boxShadow": "0 2px 8px rgba(0,0,0,0.04)", "marginBottom": "32px", "minHeight": "260px"}),
+                    ], md=5),
                 ]),
             ])
-        )
+        ])
     ], fluid=True, style={"paddingLeft": "32px", "paddingRight": "32px", "backgroundColor": "#eaeaea"})
     ], style={"backgroundColor": "#eaeaea", "minHeight": "100vh"})
 
@@ -181,7 +184,6 @@ layout = html.Div([
     Output("top3-category-bar", "figure"),
     Output("pie-title-1", "children"), Output("sku-pie-1", "figure"),
     Output("pie-title-2", "children"), Output("sku-pie-2", "figure"),
-    Output("pie-title-3", "children"), Output("sku-pie-3", "figure"),
     [Input("planning-year-dropdown", "value")]
 )
 def update_planning_charts(selected_year):
@@ -189,13 +191,12 @@ def update_planning_charts(selected_year):
     cat_df = get_top3_categories(year)
     bar_fig = px.bar(
         cat_df,
-        x="StockoutEvents",
-        y="Category",
-        orientation="h",
-        title=f"Top 3 Categories with Highest Stockout Risk ({selected_year if selected_year != 'all' else 'All Years'})",
-        labels={"StockoutEvents": "Stockout Events"}
+        x="Category",
+        y="StockoutEvents",
+        title=f"Top Categories with Highest Stockout Risk ({selected_year if selected_year != 'all' else 'All Years'})",
+        labels={"StockoutEvents": "Stockout Events", "Category": "Category"}
     )
-    bar_fig.update_yaxes(type="category")
+    bar_fig.update_xaxes(type="category")
     pie_titles = []
     pie_figs = []
     for i in range(3):
@@ -207,4 +208,4 @@ def update_planning_charts(selected_year):
         else:
             pie_titles.append("")
             pie_figs.append({"data": [], "layout": {}})
-    return bar_fig, pie_titles[0], pie_figs[0], pie_titles[1], pie_figs[1], pie_titles[2], pie_figs[2]
+    return bar_fig, pie_titles[0], pie_figs[0], pie_titles[1], pie_figs[1]

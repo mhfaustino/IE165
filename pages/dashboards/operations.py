@@ -8,7 +8,6 @@ from db_utils import get_db_connection
 
 dash.register_page(__name__, path="/operations", name="Operations Dashboard")
 
-# ---------------- HEADER ---------------- #
 header = dbc.Navbar(
     dbc.Container([
         dbc.NavbarBrand(
@@ -89,7 +88,7 @@ def update_section_sku_dropdown(selected_category):
         df = pd.read_sql_query("SELECT SKU FROM Item_Dimension WHERE LOWER(Category) = ?", conn, params=[selected_category])
         sku_list = sorted(set(df["SKU"].tolist()))
         options = [{"label": sku, "value": sku} for sku in sku_list]
-        value = sku_list  # default: all unique SKUs in category selected
+        value = sku_list
         disabled = False
     conn.close()
     return options, value, disabled
@@ -104,11 +103,9 @@ def update_section_requests_chart(selected_year, selected_month, selected_catego
     year = None if selected_year == "all" else selected_year
     month = None if selected_month == "all" else selected_month
     category = None if selected_category == "all" else selected_category
-    # Handle SKU filter logic
     if selected_category == "all":
         skus = ["all"]
     elif not selected_skus or selected_skus == []:
-        # If no SKU chosen but category chosen, select all SKUs in that category
         conn = get_db_connection()
         df = pd.read_sql_query("SELECT SKU FROM Item_Dimension WHERE LOWER(Category) = ?", conn, params=[selected_category])
         skus = df["SKU"].tolist()
@@ -291,17 +288,24 @@ layout = html.Div([
                 ], className="mb-4"),
                 dbc.Row([
                     dbc.Col([
-                        dcc.Graph(id="consumption-rate-chart", style={"height": "400px"}),
-                        html.Div(id="total-issued-qty-display", style={"fontSize": "1rm", "marginTop": "12px"})
+                        dbc.Card([
+                            dbc.CardBody([
+                                dcc.Graph(id="consumption-rate-chart", style={"height": "400px"}),
+                                html.Div(id="total-issued-qty-display", style={"fontSize": "1rm", "marginTop": "12px"})
+                            ])
+                        ], style={"border": "3px solid #eaeaea", "boxShadow": "0 2px 8px rgba(0,0,0,0.04)", "minHeight": "480px"}),
                     ], md=6),
                     dbc.Col([
-                        dcc.Graph(id="sku-ranking-chart", style={"height": "400px"})
+                        dbc.Card([
+                            dbc.CardBody([
+                                dcc.Graph(id="sku-ranking-chart", style={"height": "400px"})
+                            ])
+                        ], style={"border": "3px solid #eaeaea", "boxShadow": "0 2px 8px rgba(0,0,0,0.04)", "minHeight": "480px"}),
                     ], md=6),
                 ]),
             ])
         ),
-        # New card for section requests chart below
-        dbc.Card(
+        dbc.Card([
             dbc.CardBody([
                 html.H4("Section Requests by Amount", className="mt-4"),
                 dbc.Row([
@@ -351,11 +355,15 @@ layout = html.Div([
                 ], className="mb-4"),
                 dbc.Row([
                     dbc.Col([
-                        dcc.Graph(id="section-requests-chart", style={"height": "400px"})
+                        dbc.Card([
+                            dbc.CardBody([
+                                dcc.Graph(id="section-requests-chart", style={"height": "400px"})
+                            ])
+                        ], style={"border": "3px solid #eaeaea", "boxShadow": "0 2px 8px rgba(0,0,0,0.04)"}),
                     ], md=12),
                 ]),
             ])
-        )
+        ])
     ], fluid=True, style={"paddingLeft": "32px", "paddingRight": "32px", "backgroundColor": "#eaeaea"})
     ], style={"backgroundColor": "#eaeaea", "minHeight": "100vh"})
 
@@ -371,7 +379,6 @@ def update_operations_charts(selected_year, selected_month, selected_category):
     year = None if selected_year == "all" else selected_year
     month = None if selected_month == "all" else selected_month
     category = None if selected_category == "all" else selected_category
-    # Consumption rate chart as pie chart
     df = get_consumption_rate_data(year, month, category)
     if category:
         fig1 = px.pie(
@@ -387,7 +394,6 @@ def update_operations_charts(selected_year, selected_month, selected_category):
             values="TotalIssuedQty",
             title="Material Consumption Rate by Category",
         )
-	# SKU ranking chart
     df2 = get_ranked_sku_data(year, month, category)
     if category:
 	    fig2 = px.bar(
