@@ -5,9 +5,13 @@ from db_utils import import_csvs_to_sqlite
 import_csvs_to_sqlite()
 
 app = dash.Dash(
-    __name__, 
-    use_pages=True, 
-    external_stylesheets=[dbc.themes.FLATLY]
+    __name__,
+    use_pages=True,
+    external_stylesheets=[
+        dbc.themes.FLATLY,
+        "/assets/custom-theme.css",
+        "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    ]
 )
 
 server = app.server

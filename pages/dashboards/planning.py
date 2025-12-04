@@ -118,7 +118,8 @@ header = dbc.Navbar(
     ]),
     color="primary",
     dark=True,
-    className="mb-4"
+    className="mb-4",
+    style={"position": "sticky", "top": "0", "zIndex": "1000"}
 )
 
 layout = html.Div([
@@ -177,7 +178,37 @@ layout = html.Div([
                 ]),
             ])
         ])
-    ], fluid=True, style={"paddingLeft": "32px", "paddingRight": "32px", "backgroundColor": "#eaeaea"})
+    ], fluid=True, style={"paddingLeft": "32px", "paddingRight": "32px", "backgroundColor": "#eaeaea"}),
+    html.Footer([
+        dbc.Container([
+            dbc.Row([
+                dbc.Col([
+                    html.Div([
+                        html.Div("UPLB University Planning and Maintenance Office", className="fw-bold mb-1"),
+                        html.Div("UPMO Bldg, Rambutan Road,", className="mb-0"),
+                        html.Div("University of the Philippines Los Baños", className="mb-0"),
+                        html.Div("Batong Malake, Los Baños, Philippines 4031", className="mb-2"),
+                        html.Div([
+                            html.Span([
+                                html.I(className="bi bi-telephone-fill me-2"),
+                                "0917 882 2479"
+                            ], style={"marginRight": "24px"}),
+                            html.Span([
+                                html.I(className="bi bi-envelope-fill me-2"),
+                                "upmo.uplb@up.edu.ph"
+                            ])
+                        ], style={"display": "flex", "alignItems": "center"})
+                    ], style={"color": "#fff", "fontSize": "1rem"})
+                ], md=8),
+                dbc.Col([
+                    html.Div([
+                        html.Img(src="/assets/UPLB.png", height="120px", style={"marginRight": "16px"}),
+                        html.Img(src="/assets/upmo.png", height="120px"),
+                    ], style={"display": "flex", "justifyContent": "flex-end", "alignItems": "center", "height": "100%"})
+                ], md=4)
+            ], className="py-4")
+        ], fluid=True, style={"paddingLeft": "32px", "paddingRight": "32px"})
+    ], style={"backgroundColor": "#00563F", "marginTop": "40px", "borderTop": "4px solid #eaeaea", "paddingLeft": "64px", "paddingRight": "64px"})
     ], style={"backgroundColor": "#eaeaea", "minHeight": "100vh"})
 
 @callback(
