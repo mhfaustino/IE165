@@ -194,7 +194,8 @@ def update_planning_charts(selected_year):
         x="Category",
         y="StockoutEvents",
         title=f"Top Categories with Highest Stockout Risk ({selected_year if selected_year != 'all' else 'All Years'})",
-        labels={"StockoutEvents": "Stockout Events", "Category": "Category"}
+        labels={"StockoutEvents": "Stockout Events", "Category": "Category"},
+        color_discrete_sequence=["#8D1436"]
     )
     bar_fig.update_xaxes(type="category")
     pie_titles = []

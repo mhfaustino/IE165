@@ -302,7 +302,8 @@ def update_mae_me_chart(year, month, category, sku):
         x="Metric",
         y="Value",
         title="Forecast Error Metrics (MAE & ME)",
-        text="Value"
+        text="Value",
+        color_discrete_sequence=["#8D1436"]
     )
     fig_error.update_layout(yaxis_title="Value", xaxis_title="Metric")
     df_qty_long = df_qty.melt(var_name="Metric", value_name="Value")
@@ -312,7 +313,8 @@ def update_mae_me_chart(year, month, category, sku):
         y="Metric",
         orientation="h",
         title="Forecast & Request Quantities",
-        text="Value"
+        text="Value",
+        color_discrete_sequence=["#8D1436"]
     )
     fig_qty.update_layout(xaxis_title="Value", yaxis_title="Metric")
     return fig_error, fig_qty

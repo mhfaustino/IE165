@@ -396,25 +396,27 @@ def update_operations_charts(selected_year, selected_month, selected_category):
         )
     df2 = get_ranked_sku_data(year, month, category)
     if category:
-	    fig2 = px.bar(
-			df2,
-			x="TotalRequestedQty",
-			y="SKU",
-			orientation="h",
-			title=f"SKU Demand Ranking in {category.capitalize()}",
-			text="TotalRequestedQty",
-			labels={"TotalRequestedQty": "Total Requested Qty"}
-		)
-	    fig2.update_yaxes(type="category")
+        fig2 = px.bar(
+            df2,
+            x="TotalRequestedQty",
+            y="SKU",
+            orientation="h",
+            title=f"SKU Demand Ranking in {category.capitalize()}",
+            text="TotalRequestedQty",
+            labels={"TotalRequestedQty": "Total Requested Qty"},
+            color_discrete_sequence=["#8D1436"]
+        )
+        fig2.update_yaxes(type="category")
     else:
-	    fig2 = px.bar(
-			df2,
-			x="TotalRequestedQty",
-			y="SKU",
-			orientation="h",
-			title="Top 5 SKUs Overall by Demand",
-			text="TotalRequestedQty",
-			labels={"TotalRequestedQty": "Total Requested Qty"}
-		)
-	    fig2.update_yaxes(type="category")
+        fig2 = px.bar(
+            df2,
+            x="TotalRequestedQty",
+            y="SKU",
+            orientation="h",
+            title="Top 5 SKUs Overall by Demand",
+            text="TotalRequestedQty",
+            labels={"TotalRequestedQty": "Total Requested Qty"},
+            color_discrete_sequence=["#8D1436"]
+        )
+        fig2.update_yaxes(type="category")
     return fig1, fig2
