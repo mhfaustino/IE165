@@ -3,6 +3,9 @@ from dash import html, dcc
 import dash_bootstrap_components as dbc
 import pandas as pd
 from db_utils import get_db_connection, import_csvs_to_sqlite
+import plotly.express as px
+from dash import Input, Output, callback
+import plotly.graph_objects as go
 
 dash.register_page(__name__, path="/inventory", name="Inventory Dashboard")
 
@@ -25,6 +28,84 @@ header = dbc.Navbar(
     dark=True,
     className="mb-4"
 )
+
+# --- Metric Queries --- #
+def get_inventory_metrics(year=None, category=None):
+    conn = get_db_connection()
+    params = []
+    # Unique SKUs
+    sku_query = '''
+        SELECT COUNT(DISTINCT i.SKU) AS total_skus
+        FROM Item_Dimension i
+        JOIN Job_Request_Fact_Table f ON i.ItemKey = f.ItemKey
+        JOIN Date_Dimension d ON f.DateKey = d.DateKey
+        WHERE 1=1
+    '''
+    if year and "all" not in year:
+        sku_query += f" AND d.Year IN ({', '.join(['?' for _ in year])})"
+        params.extend(year)
+    if category and "all" not in category:
+        sku_query += f" AND LOWER(i.Category) IN ({', '.join(['?' for _ in category])})"
+        params.extend([c.lower() for c in category])
+    sku_df = pd.read_sql_query(sku_query, conn, params=params)
+    total_skus = int(sku_df["total_skus"].iloc[0]) if not sku_df.empty else 0
+
+    # Total stock
+    stock_query = '''
+        SELECT SUM(f.StockOnHand) AS total_stock
+        FROM Job_Request_Fact_Table f
+        JOIN Item_Dimension i ON f.ItemKey = i.ItemKey
+        JOIN Date_Dimension d ON f.DateKey = d.DateKey
+        WHERE 1=1
+    '''
+    stock_params = []
+    if year and "all" not in year:
+        stock_query += f" AND d.Year IN ({', '.join(['?' for _ in year])})"
+        stock_params.extend(year)
+    if category and "all" not in category:
+        stock_query += f" AND LOWER(i.Category) IN ({', '.join(['?' for _ in category])})"
+        stock_params.extend([c.lower() for c in category])
+    stock_df = pd.read_sql_query(stock_query, conn, params=stock_params)
+    total_stock = int(stock_df["total_stock"].iloc[0]) if not stock_df.empty and pd.notnull(stock_df["total_stock"].iloc[0]) else 0
+
+    # Total stockouts
+    stockout_query = '''
+        SELECT COUNT(*) AS total_stockouts
+        FROM Job_Request_Fact_Table f
+        JOIN Item_Dimension i ON f.ItemKey = i.ItemKey
+        JOIN Date_Dimension d ON f.DateKey = d.DateKey
+        WHERE f.RequestedQty > f.StockOnHand
+    '''
+    stockout_params = []
+    if year and "all" not in year:
+        stockout_query += f" AND d.Year IN ({', '.join(['?' for _ in year])})"
+        stockout_params.extend(year)
+    if category and "all" not in category:
+        stockout_query += f" AND LOWER(i.Category) IN ({', '.join(['?' for _ in category])})"
+        stockout_params.extend([c.lower() for c in category])
+    stockout_df = pd.read_sql_query(stockout_query, conn, params=stockout_params)
+    total_stockouts = int(stockout_df["total_stockouts"].iloc[0]) if not stockout_df.empty else 0
+
+    # Total obsoletes
+    obsolete_query = '''
+        SELECT COUNT(DISTINCT i.SKU) AS total_obsoletes
+        FROM Item_Dimension i
+        JOIN Job_Request_Fact_Table f ON i.ItemKey = f.ItemKey
+        JOIN Date_Dimension d ON f.DateKey = d.DateKey
+        WHERE i.ObsoleteFlag = 1
+    '''
+    obsolete_params = []
+    if year and "all" not in year:
+        obsolete_query += f" AND d.Year IN ({', '.join(['?' for _ in year])})"
+        obsolete_params.extend(year)
+    if category and "all" not in category:
+        obsolete_query += f" AND LOWER(i.Category) IN ({', '.join(['?' for _ in category])})"
+        obsolete_params.extend([c.lower() for c in category])
+    obsolete_df = pd.read_sql_query(obsolete_query, conn, params=obsolete_params)
+    total_obsoletes = int(obsolete_df["total_obsoletes"].iloc[0]) if not obsolete_df.empty else 0
+
+    conn.close()
+    return total_skus, total_stock, total_stockouts, total_obsoletes
 
 # SQL query for inventory failure frequency
 SQL_QUERY = '''
@@ -56,10 +137,6 @@ def get_inventory_failure_data():
     return df
 
 inv_df = get_inventory_failure_data()
-
-
-import plotly.express as px
-from dash import Input, Output, callback
 
 def get_forecasted_demand_data(year=None, category=None):
     conn = get_db_connection()
@@ -184,7 +261,7 @@ bar_fig = px.bar(
     y='SKU',
     color='Category',
     orientation='h',
-    title='Inventory Failure Frequency by SKU and Category',
+    title='Overstocking or Obselescence Frequency by SKU and Category',
     labels={'InventoryFailureFrequency': 'Failure Frequency'}
 )
 
@@ -250,19 +327,129 @@ layout = html.Div([
                 ]),
                 html.Hr(),
                 dbc.Row([
+                    dbc.Col(dbc.Card([
+                        dbc.CardBody([
+                            html.H6("Total Unique SKUs", className="card-title text-muted"),
+                            html.H3(id="metric-total-skus", className="card-text fw-bold mb-0"),
+                        ])
+                    ], className="shadow-sm"), md=3),
+                    dbc.Col(dbc.Card([
+                        dbc.CardBody([
+                            html.H6("Total Stock (All Items)", className="card-title text-muted"),
+                            html.H3(id="metric-total-stock", className="card-text fw-bold mb-0"),
+                        ])
+                    ], className="shadow-sm"), md=3),
+                    dbc.Col(dbc.Card([
+                        dbc.CardBody([
+                            html.H6("Total Stockouts", className="card-title text-muted"),
+                            html.H3(id="metric-total-stockouts", className="card-text fw-bold mb-0"),
+                        ])
+                    ], className="shadow-sm"), md=3),
+                    dbc.Col(dbc.Card([
+                        dbc.CardBody([
+                            html.H6("Total Obsoletes", className="card-title text-muted"),
+                            html.H3(id="metric-total-obsoletes", className="card-text fw-bold mb-0"),
+                        ])
+                    ], className="shadow-sm"), md=3),
+                ], className="mb-4"),
+                html.Hr(),
+                dbc.Row([
                     dbc.Col([
-                        html.H4("Inventory Failure Frequency", className="mt-4"),
+                        html.H4("Inventory Overstocking or Obselescence Frequency", className="mt-4"),
                         dcc.Graph(id="inventory-bar-chart", figure=bar_fig, style={"height": "400px"})
                     ], md=6),
                     dbc.Col([
                         html.H4("Forecasted Demand", className="mt-4"),
                         dcc.Graph(id="forecasted-demand-chart", figure=forecast_fig, style={"height": "400px"})
                     ], md=6),
+                ]),
+                html.Hr(),
+                dbc.Row([
+                    dbc.Col([
+                        html.H4("Total Stock per Month & Obsolete vs Active Items", className="mt-4"),
+                        dbc.Row([
+                            dbc.Col([
+                                html.Label("Year"),
+                                dcc.Dropdown(
+                                    id="chart-year-dropdown",
+                                    options=[{"label": x, "value": x} for x in [2019, 2020, 2021, 2022, 2023]],
+                                    value=2023,
+                                    multi=False,
+                                    style={"marginBottom": "8px"}
+                                ),
+                            ], md=6),
+                            dbc.Col([
+                                html.Label("Category"),
+                                dcc.Dropdown(
+                                    id="chart-category-dropdown",
+                                    options=[{"label": x, "value": x.lower()} for x in ["Buildings", "Custodial", "Electrical", "Grounds", "Landscaping", "Motorpool", "Office", "Plumbing", "Refrigeration"]],
+                                    value="buildings",
+                                    multi=False,
+                                    style={"marginBottom": "8px"}
+                                ),
+                            ], md=6),
+                        ], className="mb-3"),
+                        dbc.Row([
+                            dbc.Col([
+                                dcc.Graph(id="stock-line-chart", style={"height": "400px"})
+                            ], md=6),
+                            dbc.Col([
+                                dcc.Graph(id="obsolete-pie-chart", style={"height": "400px"})
+                            ], md=6),
+                        ])
+                    ], width=12),
                 ])
             ])
         )
     ], fluid=True, style={"paddingLeft": "32px", "paddingRight": "32px"})
 ])
+# Callback for new charts
+@callback(
+    Output("stock-line-chart", "figure"),
+    Output("obsolete-pie-chart", "figure"),
+    [Input("chart-year-dropdown", "value"), Input("chart-category-dropdown", "value")]
+)
+def update_line_and_pie_chart(chart_year, chart_category):
+    year_val = chart_year if chart_year else 2023
+    cat_val = chart_category if chart_category else "buildings"
+    conn = get_db_connection()
+    line_query = '''
+        SELECT d.Month, SUM(f.StockOnHand) AS total_stock
+        FROM Job_Request_Fact_Table f
+        JOIN Item_Dimension i ON f.ItemKey = i.ItemKey
+        JOIN Date_Dimension d ON f.DateKey = d.DateKey
+        WHERE d.Year = ? AND LOWER(i.Category) = ?
+        GROUP BY d.Month
+        ORDER BY d.Month
+    '''
+    line_df = pd.read_sql_query(line_query, conn, params=[year_val, cat_val])
+    months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+    month_map = {i+1: m for i, m in enumerate(months)}
+    line_df["MonthName"] = line_df["Month"].map(month_map)
+    all_months_df = pd.DataFrame({"Month": range(1,13), "MonthName": months})
+    line_df = pd.merge(all_months_df, line_df, on=["Month", "MonthName"], how="left").fillna({"total_stock": 0})
+    line_fig = px.line(line_df, x="MonthName", y="total_stock", title=f"Total Stock per Month in {year_val} ({cat_val.title()})", markers=True, labels={"total_stock": "Total Stock", "MonthName": "Month"})
+    # Pie chart: obsolete vs active
+    pie_query = '''
+        SELECT i.ObsoleteFlag, COUNT(DISTINCT i.SKU) AS count
+        FROM Item_Dimension i
+        JOIN Job_Request_Fact_Table f ON i.ItemKey = f.ItemKey
+        JOIN Date_Dimension d ON f.DateKey = d.DateKey
+        WHERE d.Year = ? AND LOWER(i.Category) = ?
+        GROUP BY i.ObsoleteFlag
+    '''
+    pie_df = pd.read_sql_query(pie_query, conn, params=[year_val, cat_val])
+    conn.close()
+    pie_labels = ["Active", "Obsolete"]
+    pie_counts = [0, 0]
+    for _, row in pie_df.iterrows():
+        if row["ObsoleteFlag"] == 1:
+            pie_counts[1] = row["count"]
+        else:
+            pie_counts[0] = row["count"]
+    pie_fig = go.Figure(data=[go.Pie(labels=pie_labels, values=pie_counts, hole=0.4)])
+    pie_fig.update_layout(title=f"Obsolete vs Active Items in {year_val} ({cat_val.title()})")
+    return line_fig, pie_fig
 
 @callback(
     Output("inventory-bar-chart", "figure"),
@@ -270,20 +457,17 @@ layout = html.Div([
     [Input("year-dropdown", "value"), Input("category-dropdown", "value")]
 )
 def update_charts(selected_year, selected_category):
-    # Handle multi-select and 'all'
+    # ...existing code...
     year_options = [2019, 2020, 2021, 2022, 2023]
     year = selected_year if isinstance(selected_year, list) else [selected_year]
     category = selected_category if isinstance(selected_category, list) else [selected_category]
-    # If all years are selected manually, treat as 'all'
     if sorted([int(y) for y in year if y != "all" and y is not None]) == year_options:
         year = ["all"]
-    # Ensure at least 'all' is present if empty
     if not year or year == []:
         year = ["all"]
     if not category or category == []:
         category = ["all"]
     df_failure = get_filtered_inventory_failure_data(year, category)
-    # For forecast, show top 5 SKUs from intersection of selected years and categories
     forecast_years = None if "all" in year else year
     forecast_categories = None if "all" in category else category
     combined_forecast_df = pd.DataFrame()
@@ -298,7 +482,6 @@ def update_charts(selected_year, selected_category):
             for c in forecast_categories:
                 df = get_forecasted_demand_data(y, c)
                 combined_forecast_df = pd.concat([combined_forecast_df, df], ignore_index=True)
-        # Group by SKU and Category, sum TotalForecastedQty, then pick top 5
         if not combined_forecast_df.empty:
             combined_forecast_df = combined_forecast_df.groupby(["SKU", "Category"], as_index=False)["TotalForecastedQty"].sum()
             combined_forecast_df = combined_forecast_df.sort_values("TotalForecastedQty", ascending=False).head(5)
@@ -308,7 +491,7 @@ def update_charts(selected_year, selected_category):
         y='SKU',
         color='Category',
         orientation='h',
-        title='Inventory Failure Frequency by SKU and Category',
+        title='Overstocking or Obselescence by SKU and Category',
         labels={'InventoryFailureFrequency': 'Failure Frequency'}
     )
     fig_failure.update_yaxes(type='category')
@@ -325,7 +508,23 @@ def update_charts(selected_year, selected_category):
     fig_forecast.update_yaxes(type='category')
     return fig_failure, fig_forecast
 
-from dash import ctx
+# Callback for metrics
+@callback(
+    Output("metric-total-skus", "children"),
+    Output("metric-total-stock", "children"),
+    Output("metric-total-stockouts", "children"),
+    Output("metric-total-obsoletes", "children"),
+    [Input("year-dropdown", "value"), Input("category-dropdown", "value")]
+)
+def update_metrics(selected_year, selected_category):
+    year = selected_year if isinstance(selected_year, list) else [selected_year]
+    category = selected_category if isinstance(selected_category, list) else [selected_category]
+    if not year or year == []:
+        year = ["all"]
+    if not category or category == []:
+        category = ["all"]
+    total_skus, total_stock, total_stockouts, total_obsoletes = get_inventory_metrics(year, category)
+    return f"{total_skus:,}", f"{total_stock:,}", f"{total_stockouts:,}", f"{total_obsoletes:,}"
 
 @callback(
     Output("year-dropdown", "value"),
