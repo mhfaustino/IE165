@@ -7,16 +7,22 @@ dash.register_page(__name__, path="/about", name="About")
 
 # ---------------- HEADER ---------------- #
 header = dbc.Navbar(
-	dbc.Container([
-		dbc.NavbarBrand("IE 165", className="fw-bold fs-3"),
-		dbc.Nav([
-			dbc.NavItem(dbc.NavLink("Home", href="/")),
-			dbc.NavItem(dbc.NavLink("About", href="/about")),
-		], className="ms-auto")
-	]),
-	color="primary",
-	dark=True,
-	className="mb-4 w-100"
+    dbc.Container([
+        dbc.NavbarBrand(
+            html.Div([
+                html.Img(src="/assets/upmo.png", height="40px", style={"marginRight": "12px"}),
+                html.Span("UPMO Intelligence", className="fw-bold fs-3")
+            ], style={"display": "flex", "alignItems": "center"})
+        ),
+
+        dbc.Nav([
+            dbc.NavItem(dbc.NavLink("Home", href="/")),
+            dbc.NavItem(dbc.NavLink("About", href="/about")),
+        ], className="ms-auto")
+    ]),
+    color="primary",
+    dark=True,
+    className="mb-4"
 )
 
 # --------------- PROFILE CARD DATA --------------- #

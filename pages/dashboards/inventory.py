@@ -9,7 +9,13 @@ dash.register_page(__name__, path="/inventory", name="Inventory Dashboard")
 # ---------------- HEADER ---------------- #
 header = dbc.Navbar(
     dbc.Container([
-        dbc.NavbarBrand("IE 165", className="fw-bold fs-3"),
+        dbc.NavbarBrand(
+            html.Div([
+                html.Img(src="/assets/upmo.png", height="40px", style={"marginRight": "12px"}),
+                html.Span("UPMO Intelligence", className="fw-bold fs-3")
+            ], style={"display": "flex", "alignItems": "center"})
+        ),
+
         dbc.Nav([
             dbc.NavItem(dbc.NavLink("Home", href="/")),
             dbc.NavItem(dbc.NavLink("About", href="/about")),
@@ -17,7 +23,7 @@ header = dbc.Navbar(
     ]),
     color="primary",
     dark=True,
-    className="mb-4 w-100"
+    className="mb-4"
 )
 
 # SQL query for inventory failure frequency

@@ -1,0 +1,26 @@
+/* Custom Bootstrap theme overrides */
+:root {
+    --bs-primary: #8D1436;
+    --bs-secondary: #00563F;
+}
+
+.btn-primary, .bg-primary, .text-primary {
+    background-color: #8D1436 !important;
+    color: #fff !important;
+}
+
+.btn-secondary, .bg-secondary, .text-secondary {
+    background-color: #00563F !important;
+    color: #fff !important;
+}
+
+/* Navbar custom colors */
+.navbar.bg-primary, .navbar.bg-primary .navbar-brand {
+    background-color: #8D1436 !important;
+    color: #fff !important;
+}
+
+.navbar.bg-secondary, .navbar.bg-secondary .navbar-brand {
+    background-color: #00563F !important;
+    color: #fff !important;
+}
