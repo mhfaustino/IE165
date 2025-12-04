@@ -250,6 +250,80 @@ layout = html.Div([
                 ], size="md"),
             ], md=6, className="d-flex align-items-center justify-content-end"),
         ], className="mb-2", style={"paddingTop": "32px"}),
+        html.Div([
+            html.Div([
+                html.Img(src="/assets/kwek.jpg", style={
+                    "width": "100vw",
+                    "height": "440px",
+                    "objectFit": "cover",
+                    "position": "relative",
+                    "left": "50%",
+                    "transform": "translateX(-50%)"
+                }),
+                html.Div(style={
+                    "position": "absolute",
+                    "top": "0",
+                    "left": "0",
+                    "width": "100vw",
+                    "height": "440px",
+                    "background": "rgba(0,0,0,0.65)",
+                    "zIndex": "1"
+                }),
+                html.Div([
+                    html.Div("OPERATIONS", style={
+                        "color": "#fff",
+                        "fontSize": "3rem",
+                        "fontWeight": "bold",
+                        "textShadow": "0 2px 8px rgba(0,0,0,0.32)",
+                        "letterSpacing": "0.12em",
+                        "width": "100%",
+                        "marginBottom": "12px",
+                        "display": "flex",
+                        "justifyContent": "center",
+                        "alignItems": "center",
+                        "textAlign": "center"
+                    }),
+                    html.Hr(style={
+                        "width": "60%",
+                        "borderColor": "#fff",
+                        "opacity": "0.7",
+                        "margin": "12px auto"
+                    }),
+                    html.Div([
+                        "Track service delivery, monitor material consumption, and analyze operational performance across units.", html.Br(),
+                        "This dashboard provides actionable insights for efficient resource management and continuous improvement."
+                    ],
+                        style={
+                            "color": "#fff",
+                            "fontSize": "1.1rem",
+                            "width": "100%",
+                            "textShadow": "0 2px 8px rgba(0,0,0,0.32)",
+                            "display": "flex",
+                            "justifyContent": "center",
+                            "alignItems": "center",
+                            "textAlign": "center"
+                        }
+                    )
+                ], style={
+                    "position": "absolute",
+                    "top": "0",
+                    "left": "0",
+                    "width": "100vw",
+                    "height": "440px",
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "justifyContent": "center",
+                    "alignItems": "center",
+                    "zIndex": "2"
+                })
+            ], style={
+                "position": "relative",
+                "width": "100vw",
+                "marginBottom": "8px",
+                "left": "50%",
+                "transform": "translateX(-50%)"
+            }),
+        ]),
         dbc.Card(
             dbc.CardBody([
                 html.H4("Operations", className="mt-4"),
