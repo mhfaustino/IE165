@@ -89,7 +89,78 @@ cards = dbc.Row(
 layout = html.Div([
     header,
     dbc.Container([
-        hero_section,
+        html.Div([
+            html.Img(src="/assets/hero-bg.jpg", style={
+                "width": "100vw",
+                "height": "440px",
+                "objectFit": "cover",
+                "position": "relative",
+                "left": "50%",
+                "transform": "translateX(-50%)"
+            }),
+            html.Div(style={
+                "position": "absolute",
+                "top": "0",
+                "left": "0",
+                "width": "100vw",
+                "height": "440px",
+                "background": "rgba(0,0,0,0.65)",
+                "zIndex": "1"
+            }),
+            html.Div([
+                html.Div("UPMO Intelligence", style={
+                    "color": "#fff",
+                    "fontSize": "5.4rem",
+                    "fontWeight": "bold",
+                    "textShadow": "0 2px 8px rgba(0,0,0,0.32)",
+                    "width": "100%",
+                    "marginBottom": "8px",
+                    "display": "flex",
+                    "justifyContent": "center",
+                    "alignItems": "center",
+                    "textAlign": "center"
+                }),
+                html.Hr(style={
+                    "width": "60%",
+                    "borderColor": "#fff",
+                    "opacity": "0.7",
+                    "margin": "12px auto"
+                }),
+                html.Div([
+                    "A unified dashboard for UPLB's Planning and Maintenance Office, integrating inventory, forecasting, operations, and strategic planning.", html.Br(),
+                    "Empowering data-driven decisions for efficient campus management."
+                ],
+                    style={
+                        "color": "#fff",
+                        "fontSize": "1.1rem",
+                        "width": "100%",
+                        "textShadow": "0 2px 8px rgba(0,0,0,0.32)",
+                        "display": "flex",
+                        "justifyContent": "center",
+                        "alignItems": "center",
+                        "textAlign": "center"
+                    }
+                )
+            ], style={
+                "position": "absolute",
+                "top": "0",
+                "left": "0",
+                "width": "100vw",
+                "height": "440px",
+                "display": "flex",
+                "flexDirection": "column",
+                "justifyContent": "center",
+                "alignItems": "center",
+                "zIndex": "2"
+            })
+        ], style={
+            "position": "relative",
+            "width": "100vw",
+            "marginBottom": "16px",
+            "left": "50%",
+            "transform": "translateX(-50%)",
+            "marginTop": "-32px"
+        }),
         cards
     ], fluid=True, style={"paddingLeft": "32px", "paddingRight": "32px"}),
     html.Footer([
