@@ -401,8 +401,8 @@ layout = html.Div([
                 ])
             ])
         )
-    ], fluid=True, style={"paddingLeft": "32px", "paddingRight": "32px"})
-])
+    ], fluid=True, style={"paddingLeft": "32px", "paddingRight": "32px", "backgroundColor": "#eaeaea"})
+    ], style={"backgroundColor": "#eaeaea", "minHeight": "100vh"})
 # Callback for new charts
 @callback(
     Output("stock-line-chart", "figure"),

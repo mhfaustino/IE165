@@ -262,8 +262,8 @@ layout = html.Div([
                 ])
             ])
         )
-    ], fluid=True, style={"paddingLeft": "32px", "paddingRight": "32px"})
-])
+    ], fluid=True, style={"paddingLeft": "32px", "paddingRight": "32px", "backgroundColor": "#eaeaea"})
+    ], style={"backgroundColor": "#eaeaea", "minHeight": "100vh"})
 from dash import ctx
 @callback(
     Output("mae-sku-dropdown", "options"),

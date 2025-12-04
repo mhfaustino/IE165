@@ -92,4 +92,4 @@ layout = html.Div([
         hero_section,
         cards
     ], fluid=True, style={"paddingLeft": "32px", "paddingRight": "32px"})
-])
+], style={"backgroundColor": "#eaeaea", "minHeight": "100vh"})

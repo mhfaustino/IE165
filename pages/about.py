@@ -66,4 +66,4 @@ layout = html.Div([
 		html.H2("Developers", className="fw-bold mb-2 mt-4"),
 		profile_cards
 	], fluid=True, style={"paddingLeft": "32px", "paddingRight": "32px"})
-])
+	], style={"backgroundColor": "#eaeaea", "minHeight": "100vh"})
