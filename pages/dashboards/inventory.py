@@ -83,7 +83,7 @@ def get_inventory_metrics(year=None, category=None):
     total_stockouts = int(stockout_df["total_stockouts"].iloc[0]) if not stockout_df.empty else 0
 
     obsolete_query = '''
-        SELECT COUNT(DISTINCT i.SKU) AS total_obsoletes
+        SELECT COUNT(i.SKU) AS total_obsoletes
         FROM Item_Dimension i
         JOIN Job_Request_Fact_Table f ON i.ItemKey = f.ItemKey
         JOIN Date_Dimension d ON f.DateKey = d.DateKey
