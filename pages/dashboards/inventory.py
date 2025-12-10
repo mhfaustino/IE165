@@ -218,7 +218,7 @@ def get_filtered_inventory_failure_data(year=None, category=None):
         SUM(
             CASE
                 WHEN i.ObsoleteFlag = 1 
-                OR f.RequestedQty > f.StockOnHand THEN 1
+                OR f.StockOnHand > f.ForecastQty THEN 1
                 ELSE 0
             END
         ) AS InventoryFailureFrequency
