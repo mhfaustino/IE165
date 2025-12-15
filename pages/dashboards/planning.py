@@ -308,7 +308,7 @@ def update_planning_charts(selected_year):
     for i in range(3):
         if i < len(cat_df):
             cat = cat_df.iloc[i]["Category"]
-            pie_titles.append(f"SKU Stockout Distribution for {cat}")
+            pie_titles.append(f"SKU Stockout Distribution for {cat} (Top {i+1})")
             sku_df = get_stockout_sku_pie(year, cat)
             pie_figs.append(px.pie(sku_df, names="SKU", values="StockoutEvents", title=None))
         else:
