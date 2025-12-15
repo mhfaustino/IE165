@@ -432,7 +432,30 @@ layout = html.Div([
                         dbc.Card([
                             dbc.CardBody([
                                 html.H4("Forecasted Demand", className="mt-4"),
-                                dcc.Graph(id="forecasted-demand-chart", figure=forecast_fig, style={"height": "400px"})
+                                dbc.Row([
+                                    dbc.Col([
+                                        html.Label("Filter by Year", style={"fontSize": "0.9rem"}),
+                                        dcc.Dropdown(
+                                            id="forecasted-year-dropdown",
+                                            options=[{"label": str(x), "value": x} for x in [2019, 2020, 2021, 2022, 2023]],
+                                            value=2023,
+                                            placeholder="Select Year",
+                                            style={"fontSize": "0.85rem"}
+                                        ),
+                                    ], md=6),
+                                    dbc.Col([
+                                        html.Label("Filter by Category", style={"fontSize": "0.9rem"}),
+                                        dcc.Dropdown(
+                                            id="forecasted-category-dropdown",
+                                            options=[{"label": "All Categories", "value": "all"}] + [{"label": x, "value": x.lower()} for x in ["Buildings", "Custodial", "Electrical", "Grounds", "Landscaping", "Motorpool", "Office", "Plumbing", "Refrigeration"]],
+                                            value=["all"],
+                                            multi=True,
+                                            placeholder="Select Category",
+                                            style={"fontSize": "0.85rem"}
+                                        ),
+                                    ], md=6),
+                                ], className="mb-3"),
+                                dcc.Graph(id="forecasted-demand-chart", figure=forecast_fig, style={"height": "300px"})
                             ])
                         ], style={"border": "3px solid #eaeaea", "boxShadow": "0 2px 8px rgba(0,0,0,0.04)"}),
                     ], md=6),
@@ -567,10 +590,9 @@ def update_line_and_pie_chart(chart_year, chart_category):
 
 @callback(
     Output("inventory-bar-chart", "figure"),
-    Output("forecasted-demand-chart", "figure"),
     [Input("year-dropdown", "value"), Input("category-dropdown", "value")]
 )
-def update_charts(selected_year, selected_category):
+def update_inventory_chart(selected_year, selected_category):
     year_options = [2019, 2020, 2021, 2022, 2023]
     year = selected_year if isinstance(selected_year, list) else [selected_year]
     category = selected_category if isinstance(selected_category, list) else [selected_category]
@@ -581,23 +603,6 @@ def update_charts(selected_year, selected_category):
     if not category or category == []:
         category = ["all"]
     df_failure = get_filtered_inventory_failure_data(year, category)
-    forecast_years = None if "all" in year else year
-    forecast_categories = None if "all" in category else category
-    combined_forecast_df = pd.DataFrame()
-    if forecast_years is None and forecast_categories is None:
-        combined_forecast_df = get_forecasted_demand_data()
-    else:
-        if forecast_years is None:
-            forecast_years = [None]
-        if forecast_categories is None:
-            forecast_categories = [None]
-        for y in forecast_years:
-            for c in forecast_categories:
-                df = get_forecasted_demand_data(y, c)
-                combined_forecast_df = pd.concat([combined_forecast_df, df], ignore_index=True)
-        if not combined_forecast_df.empty:
-            combined_forecast_df = combined_forecast_df.groupby(["SKU", "Category"], as_index=False)["TotalForecastedQty"].sum()
-            combined_forecast_df = combined_forecast_df.sort_values("TotalForecastedQty", ascending=False).head(5)
     fig_failure = px.bar(
         df_failure,
         x='InventoryFailureFrequency',
@@ -608,6 +613,32 @@ def update_charts(selected_year, selected_category):
         labels={'InventoryFailureFrequency': 'Failure Frequency'}
     )
     fig_failure.update_yaxes(type='category')
+    return fig_failure
+
+@callback(
+    Output("forecasted-demand-chart", "figure"),
+    [Input("forecasted-year-dropdown", "value"), Input("forecasted-category-dropdown", "value")]
+)
+def update_forecasted_demand_chart(selected_year, selected_category):
+    category = selected_category if isinstance(selected_category, list) else [selected_category]
+    if not category or category == []:
+        category = ["all"]
+    
+    forecast_years = None if selected_year is None else selected_year
+    forecast_categories = None if "all" in category else category
+    combined_forecast_df = pd.DataFrame()
+    
+    if forecast_years is None and forecast_categories is None:
+        combined_forecast_df = get_forecasted_demand_data()
+    else:
+        if forecast_categories is None:
+            forecast_categories = [None]
+        for c in forecast_categories:
+            df = get_forecasted_demand_data(forecast_years, c)
+            combined_forecast_df = pd.concat([combined_forecast_df, df], ignore_index=True)
+        if not combined_forecast_df.empty:
+            combined_forecast_df = combined_forecast_df.groupby(["SKU", "Category"], as_index=False)["TotalForecastedQty"].sum()
+            combined_forecast_df = combined_forecast_df.sort_values("TotalForecastedQty", ascending=False).head(5)
 
     fig_forecast = px.bar(
         combined_forecast_df,
@@ -619,7 +650,7 @@ def update_charts(selected_year, selected_category):
         labels={'TotalForecastedQty': 'Forecasted Qty'}
     )
     fig_forecast.update_yaxes(type='category')
-    return fig_failure, fig_forecast
+    return fig_forecast
 
 @callback(
     Output("metric-total-skus", "children"),
