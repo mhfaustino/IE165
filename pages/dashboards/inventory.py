@@ -427,7 +427,9 @@ layout = html.Div([
                                 dcc.Graph(id="inventory-bar-chart", figure=bar_fig, style={"height": "400px"})
                             ])
                         ], style={"border": "3px solid #eaeaea", "boxShadow": "0 2px 8px rgba(0,0,0,0.04)"}),
-                    ], md=6),
+                    ], width=12),
+                ], className="mb-4"),
+                dbc.Row([
                     dbc.Col([
                         dbc.Card([
                             dbc.CardBody([
@@ -442,7 +444,7 @@ layout = html.Div([
                                             placeholder="Select Year",
                                             style={"fontSize": "0.85rem"}
                                         ),
-                                    ], md=6),
+                                    ], md=3),
                                     dbc.Col([
                                         html.Label("Filter by Category", style={"fontSize": "0.9rem"}),
                                         dcc.Dropdown(
@@ -453,12 +455,12 @@ layout = html.Div([
                                             placeholder="Select Category",
                                             style={"fontSize": "0.85rem"}
                                         ),
-                                    ], md=6),
+                                    ], md=4),
                                 ], className="mb-3"),
-                                dcc.Graph(id="forecasted-demand-chart", figure=forecast_fig, style={"height": "300px"})
+                                dcc.Graph(id="forecasted-demand-chart", figure=forecast_fig, style={"height": "400px"})
                             ])
                         ], style={"border": "3px solid #eaeaea", "boxShadow": "0 2px 8px rgba(0,0,0,0.04)"}),
-                    ], md=6),
+                    ], width=12),
                 ]),
                 html.Hr(),
                 dbc.Row([
