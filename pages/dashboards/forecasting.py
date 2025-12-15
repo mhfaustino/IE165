@@ -260,7 +260,7 @@ layout = html.Div([
                                 html.Label("Filter by Year"),
                                 dcc.Dropdown(
                                     id="trend-year-dropdown",
-                                    options=[{"label": str(x), "value": x} for x in [2022, 2021, 2019]],
+                                    options=[{"label": str(x), "value": x} for x in [2019, 2020, 2021, 2022]],
                                     value=2022,
                                     placeholder="Select Year"
                                 ),
@@ -291,7 +291,7 @@ layout = html.Div([
                                 html.Label("Year"),
                                 dcc.Dropdown(
                                     id="mae-year-dropdown",
-                                    options=[{"label": str(x), "value": x} for x in [2023, 2022, 2021, 2019]],
+                                    options=[{"label": str(x), "value": x} for x in [2019, 2020, 2021, 2022, 2023]],
                                     value=2023,
                                     placeholder="Select Year"
                                 ),
@@ -442,7 +442,7 @@ def update_forecast_trend_chart(selected_year, selected_category):
         y="ForecastQty",
         color="SKU",
         markers=True,
-        title=f"Forecasted Demand Trend for {category} ({input_year - 1}, {input_year}, {input_year + 1})"
+        title=f"Forecasted Demand Trend for {category}"
     )
     fig.update_layout(xaxis_title="Year", yaxis_title="Forecasted Demand")
     return fig
