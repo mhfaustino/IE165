@@ -253,7 +253,7 @@ bar_fig = px.bar(
     y='SKU',
     color='Category',
     orientation='h',
-    title='Overstocking or Obselescence Frequency by SKU and Category',
+    title='Overstocking and Obselescence Frequency by SKU and Category',
     labels={'InventoryFailureFrequency': 'Failure Frequency'}
 )
 
@@ -423,7 +423,7 @@ layout = html.Div([
                     dbc.Col([
                         dbc.Card([
                             dbc.CardBody([
-                                html.H4("Inventory Overstocking or Obselescence Frequency", className="mt-4"),
+                                html.H4("Inventory Overstocking and Obselescence Frequency", className="mt-4"),
                                 dcc.Graph(id="inventory-bar-chart", figure=bar_fig, style={"height": "400px"})
                             ])
                         ], style={"border": "3px solid #eaeaea", "boxShadow": "0 2px 8px rgba(0,0,0,0.04)"}),
